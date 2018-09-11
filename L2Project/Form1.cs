@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace L2Project
 {
-    public partial class Form1 : Form
+    public partial class Intro : Form
     {
-        public Form1()
+        public Intro()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
