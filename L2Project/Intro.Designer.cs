@@ -28,74 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Welcomelabel = new System.Windows.Forms.Label();
-            this.Createnew = new System.Windows.Forms.RadioButton();
-            this.existingtemplate = new System.Windows.Forms.RadioButton();
-            this.Errorstemplate = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.templatedropdown = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Welcomelabel
+            // button1
             // 
-            this.Welcomelabel.AutoSize = true;
-            this.Welcomelabel.Font = new System.Drawing.Font("Modern No. 20", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Welcomelabel.ForeColor = System.Drawing.Color.Yellow;
-            this.Welcomelabel.Location = new System.Drawing.Point(279, 34);
-            this.Welcomelabel.Name = "Welcomelabel";
-            this.Welcomelabel.Size = new System.Drawing.Size(173, 41);
-            this.Welcomelabel.TabIndex = 0;
-            this.Welcomelabel.Text = "Welcome";
-            this.Welcomelabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Welcomelabel.Click += new System.EventHandler(this.label1_Click);
+            this.button1.BackColor = System.Drawing.Color.DarkOrange;
+            this.button1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(54, 353);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(179, 60);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Create New";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // Createnew
+            // templatedropdown
             // 
-            this.Createnew.AutoSize = true;
-            this.Createnew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Createnew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.Createnew.Location = new System.Drawing.Point(274, 157);
-            this.Createnew.Name = "Createnew";
-            this.Createnew.Size = new System.Drawing.Size(275, 33);
-            this.Createnew.TabIndex = 2;
-            this.Createnew.TabStop = true;
-            this.Createnew.Text = "Create New Template\r\n";
-            this.Createnew.UseVisualStyleBackColor = true;
+            this.templatedropdown.AllowDrop = true;
+            this.templatedropdown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.templatedropdown.FormattingEnabled = true;
+            this.templatedropdown.Items.AddRange(new object[] {
+            "Suspension",
+            "First Email",
+            "Reminder Email",
+            "Contacting user (hangouts)",
+            "Contacting user (IP address)"});
+            this.templatedropdown.Location = new System.Drawing.Point(273, 151);
+            this.templatedropdown.Name = "templatedropdown";
+            this.templatedropdown.Size = new System.Drawing.Size(180, 28);
+            this.templatedropdown.TabIndex = 2;
+            this.templatedropdown.Text = "Choose Template";
+            this.templatedropdown.Enter += new System.EventHandler(this.templatedropdown_Enter);
+            this.templatedropdown.Leave += new System.EventHandler(this.templatedropdown_Leave);
             // 
-            // existingtemplate
+            // label1
             // 
-            this.existingtemplate.AutoSize = true;
-            this.existingtemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.existingtemplate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.existingtemplate.Location = new System.Drawing.Point(318, 248);
-            this.existingtemplate.Name = "existingtemplate";
-            this.existingtemplate.Size = new System.Drawing.Size(231, 33);
-            this.existingtemplate.TabIndex = 3;
-            this.existingtemplate.TabStop = true;
-            this.existingtemplate.Text = "Existing Template\r\n";
-            this.existingtemplate.UseVisualStyleBackColor = true;
-            // 
-            // Errorstemplate
-            // 
-            this.Errorstemplate.AutoSize = true;
-            this.Errorstemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Errorstemplate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Errorstemplate.Location = new System.Drawing.Point(274, 331);
-            this.Errorstemplate.Name = "Errorstemplate";
-            this.Errorstemplate.Size = new System.Drawing.Size(235, 33);
-            this.Errorstemplate.TabIndex = 4;
-            this.Errorstemplate.TabStop = true;
-            this.Errorstemplate.Text = "Error Explanations";
-            this.Errorstemplate.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Stencil", 20F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Orange;
+            this.label1.Location = new System.Drawing.Point(152, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(485, 47);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Template Automation ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Intro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.Tomato;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Errorstemplate);
-            this.Controls.Add(this.existingtemplate);
-            this.Controls.Add(this.Createnew);
-            this.Controls.Add(this.Welcomelabel);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.templatedropdown);
+            this.Controls.Add(this.button1);
             this.Name = "Intro";
             this.Text = "Intro";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -105,11 +94,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label Welcomelabel;
-        private System.Windows.Forms.RadioButton Createnew;
-        private System.Windows.Forms.RadioButton existingtemplate;
-        private System.Windows.Forms.RadioButton Errorstemplate;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox templatedropdown;
+        private System.Windows.Forms.Label label1;
     }
 }
 

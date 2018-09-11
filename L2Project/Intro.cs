@@ -26,5 +26,22 @@ namespace L2Project
         {
 
         }
+
+        private void templatedropdown_Enter(object sender, EventArgs e)
+        {
+            if (templatedropdown.Text=="Choose Template")
+            {
+                templatedropdown.Text = "";
+            }
+        }
+
+        private void templatedropdown_Leave(object sender, EventArgs e)
+        {
+            if (templatedropdown.Text == "")
+            {
+                templatedropdown.Text = "Choose Template";
+                templatedropdown.ForeColor = Color.DarkGoldenrod;
+            }
+        }
     }
 }
