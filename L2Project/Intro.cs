@@ -43,5 +43,15 @@ namespace L2Project
                 templatedropdown.ForeColor = Color.DarkGoldenrod;
             }
         }
+
+        private void templatedropdown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
