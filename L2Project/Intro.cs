@@ -56,51 +56,43 @@ namespace L2Project
 
         private void Yournamebox_Enter(object sender, EventArgs e)
         {
-            if (Yournamebox.Text == "Your Name")
-            {
-                Yournamebox.Text = "";
-            }
+            
         }
 
         private void Yournamebox_Leave(object sender, EventArgs e)
         {
-            if (Yournamebox.Text == "")
-            {
-                Yournamebox.Text = "Your Name";
-                Yournamebox.ForeColor = Color.DarkRed;
-            }
+          
         }
 
         private void Ticket_Enter(object sender, EventArgs e)
         {
-            if (Ticket.Text == "Ticket #")
-            {
-                Ticket.Text = "";
-            }
+      
+            
         }
 
         private void Ticket_Leave(object sender, EventArgs e)
         {
-            if (Ticket.Text == "")
-            {
-                Ticket.Text = "Ticket #";
-            }
+            
         }
 
         private void Clientname_Enter(object sender, EventArgs e)
         {
-            if (Clientname.Text == "Client Name")
-            {
-                Clientname.Text = "";
-            }
+           
         }
 
         private void Clientname_Leave(object sender, EventArgs e)
         {
-            if (Clientname.Text == "")
-            {
-                Clientname.Text = "Client Name";
-            }
+            
+        }
+
+        private void Clientname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
