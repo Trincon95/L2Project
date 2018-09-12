@@ -38,8 +38,8 @@
             this.button1.BackColor = System.Drawing.Color.DarkOrange;
             this.button1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(51, 354);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(42, 323);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(239, 75);
             this.button1.TabIndex = 1;
@@ -58,8 +58,8 @@
             "Reminder Email",
             "Contacting user (hangouts)",
             "Contacting user (IP address)"});
-            this.templatedropdown.Location = new System.Drawing.Point(233, 161);
-            this.templatedropdown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.templatedropdown.Location = new System.Drawing.Point(150, 100);
+            this.templatedropdown.Margin = new System.Windows.Forms.Padding(4);
             this.templatedropdown.Name = "templatedropdown";
             this.templatedropdown.Size = new System.Drawing.Size(279, 30);
             this.templatedropdown.TabIndex = 2;
@@ -74,7 +74,8 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Stencil", 20F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Orange;
-            this.label1.Location = new System.Drawing.Point(196, 52);
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Location = new System.Drawing.Point(119, 40);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(485, 47);
@@ -88,15 +89,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Tomato;
-            this.ClientSize = new System.Drawing.Size(778, 494);
+            this.ClientSize = new System.Drawing.Size(578, 444);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.templatedropdown);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Intro";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Intro";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
