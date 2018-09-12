@@ -52,7 +52,7 @@
             this.Createnew.AutoSize = true;
             this.Createnew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Createnew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.Createnew.Location = new System.Drawing.Point(274, 157);
+            this.Createnew.Location = new System.Drawing.Point(262, 113);
             this.Createnew.Name = "Createnew";
             this.Createnew.Size = new System.Drawing.Size(275, 33);
             this.Createnew.TabIndex = 2;
@@ -65,7 +65,7 @@
             this.existingtemplate.AutoSize = true;
             this.existingtemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.existingtemplate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.existingtemplate.Location = new System.Drawing.Point(318, 248);
+            this.existingtemplate.Location = new System.Drawing.Point(262, 164);
             this.existingtemplate.Name = "existingtemplate";
             this.existingtemplate.Size = new System.Drawing.Size(231, 33);
             this.existingtemplate.TabIndex = 3;
@@ -78,7 +78,7 @@
             this.Errorstemplate.AutoSize = true;
             this.Errorstemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Errorstemplate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Errorstemplate.Location = new System.Drawing.Point(274, 331);
+            this.Errorstemplate.Location = new System.Drawing.Point(258, 203);
             this.Errorstemplate.Name = "Errorstemplate";
             this.Errorstemplate.Size = new System.Drawing.Size(235, 33);
             this.Errorstemplate.TabIndex = 4;
