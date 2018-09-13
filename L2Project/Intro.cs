@@ -92,7 +92,20 @@ namespace L2Project
 
         private void button4_Click(object sender, EventArgs e)
         {
+            ticknum TN = new ticknum();
+            TN.ShowDialog();
+        }
 
+        private void yourname_Click(object sender, EventArgs e)
+        {
+            yourname YN = new yourname();
+            YN.ShowDialog();
+        }
+
+        private void Client_Click(object sender, EventArgs e)
+        {
+            clientname CN = new clientname();
+            CN.ShowDialog();
         }
     }
 }

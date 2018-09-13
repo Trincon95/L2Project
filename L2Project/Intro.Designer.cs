@@ -86,6 +86,7 @@ namespace L2Project
             this.yourname.TabIndex = 6;
             this.yourname.Text = "Your Name";
             this.yourname.UseVisualStyleBackColor = false;
+            this.yourname.Click += new System.EventHandler(this.yourname_Click);
             // 
             // ticketnum
             // 
@@ -111,6 +112,7 @@ namespace L2Project
             this.Client.TabIndex = 8;
             this.Client.Text = "Client Name";
             this.Client.UseVisualStyleBackColor = false;
+            this.Client.Click += new System.EventHandler(this.Client_Click);
             // 
             // button1
             // 
