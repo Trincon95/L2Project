@@ -36,6 +36,7 @@ namespace L2Project
             this.ticketnum = new System.Windows.Forms.Button();
             this.Client = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.YNbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // templatedropdown
@@ -126,6 +127,15 @@ namespace L2Project
             this.button1.Text = "Create New\r\n";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // YNbox
+            // 
+            this.YNbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.YNbox.Location = new System.Drawing.Point(66, 149);
+            this.YNbox.Name = "YNbox";
+            this.YNbox.Size = new System.Drawing.Size(100, 21);
+            this.YNbox.TabIndex = 10;
+            this.YNbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Intro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -133,6 +143,7 @@ namespace L2Project
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(573, 530);
+            this.Controls.Add(this.YNbox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Client);
             this.Controls.Add(this.ticketnum);
@@ -145,8 +156,8 @@ namespace L2Project
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Intro";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -157,6 +168,7 @@ namespace L2Project
         private System.Windows.Forms.Button ticketnum;
         private System.Windows.Forms.Button Client;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox YNbox;
 
         public EventHandler Yournamebox_TextChanged { get; private set; }
     }

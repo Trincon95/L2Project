@@ -16,13 +16,18 @@ namespace L2Project
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        public static class Initial
         {
-            this.Hide();
-            string yourName = "";
-            yourName = yournamebox.Text;
-            MessageBox.Show(yourName);
+            
+           
         }
+            public void YNGo_Click(object sender, EventArgs e)
+            {
+                this.Hide();
+                string YName = "";
+                YName = yournamebox.Text;
+         
+            }
+        
     }
 }
