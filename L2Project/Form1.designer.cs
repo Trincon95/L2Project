@@ -75,17 +75,24 @@
             // Title
             // 
             this.Title.AutoSize = true;
-            this.Title.Font = new System.Drawing.Font("Harlow Solid Italic", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title.Location = new System.Drawing.Point(189, 18);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(443, 61);
+            this.Title.Size = new System.Drawing.Size(468, 61);
             this.Title.TabIndex = 3;
             this.Title.Text = "Template Generator ";
             this.Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // comboBox1
             // 
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            "Primary Email",
+            "Reminder Email",
+            "Suspension",
+            "Hangouts message",
+            "IP address"});
+            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox1.BackColor = System.Drawing.Color.LightSalmon;
             this.comboBox1.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.ForeColor = System.Drawing.Color.Black;
@@ -121,9 +128,9 @@
             this.Copybut.BackColor = System.Drawing.Color.CadetBlue;
             this.Copybut.Font = new System.Drawing.Font("Harlow Solid Italic", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Copybut.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.Copybut.Location = new System.Drawing.Point(105, 417);
+            this.Copybut.Location = new System.Drawing.Point(167, 420);
             this.Copybut.Name = "Copybut";
-            this.Copybut.Size = new System.Drawing.Size(527, 155);
+            this.Copybut.Size = new System.Drawing.Size(417, 131);
             this.Copybut.TabIndex = 6;
             this.Copybut.Text = "Copy";
             this.Copybut.UseVisualStyleBackColor = false;
