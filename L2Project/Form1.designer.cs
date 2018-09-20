@@ -56,6 +56,7 @@
             this.Cnamebox.TabIndex = 1;
             this.Cnamebox.Text = "Client ";
             this.Cnamebox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Cnamebox.TextChanged += new System.EventHandler(this.Cnamebox_TextChanged);
             this.Cnamebox.Enter += new System.EventHandler(this.Cnamebox_Enter);
             this.Cnamebox.Leave += new System.EventHandler(this.Cnamebox_Leave);
             // 

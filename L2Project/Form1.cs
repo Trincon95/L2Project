@@ -189,7 +189,11 @@ namespace round2project
 
            
 
-        }   
-       
+        }
+
+        private void Cnamebox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

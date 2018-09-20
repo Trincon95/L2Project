@@ -34,11 +34,13 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(0, 12);
+            this.textBox1.Location = new System.Drawing.Point(1, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(801, 330);
             this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "t";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button2
             // 

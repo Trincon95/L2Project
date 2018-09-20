@@ -20,11 +20,22 @@ namespace L2Project
         private void TemplateForm_Load(object sender, EventArgs e)
         {
 
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+          
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            MessageBox.Show(textBox1.Text);
+
 
         }
+
+      
     }
 }
