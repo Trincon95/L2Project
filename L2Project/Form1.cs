@@ -22,7 +22,7 @@ namespace round2project
 
         public void Cnamebox_Enter(object sender, EventArgs e) // Creates Placeholder
         {
-            if (Cnamebox.Text == "Client ")
+            if (Cnamebox.Text == "Customer Name")
             {
                 Cnamebox.Text = "";
             }
@@ -32,7 +32,7 @@ namespace round2project
         {
             if (Cnamebox.Text == "")
             {
-                Cnamebox.Text = "Client ";
+                Cnamebox.Text = "Customer Name";
             }
         }
 
@@ -146,14 +146,14 @@ namespace round2project
             CopyLabel.Hide();
             
             
-            if (Cnamebox.Text == "Client Name")
+            if (Cnamebox.Text == "Customer Name")
                 {
                     Cnamebox.Text = "";
                 }
             
             if (Cnamebox.Text == "")
                 {
-                    Cnamebox.Text = "Client Name";
+                    Cnamebox.Text = "Customer Name";
                 }
             
 
