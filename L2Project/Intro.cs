@@ -57,6 +57,7 @@ namespace L2Project
             {
                 yourname YN = new yourname();
                 YN.ShowDialog();
+
             }
 
             private void Client_Click(object sender, EventArgs e)
@@ -64,7 +65,7 @@ namespace L2Project
                 clientname CN = new clientname();
                 CN.ShowDialog();
             }
-
+       
 
  
         }

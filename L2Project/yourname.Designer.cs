@@ -38,6 +38,7 @@
             this.yournamebox.Name = "yournamebox";
             this.yournamebox.Size = new System.Drawing.Size(159, 26);
             this.yournamebox.TabIndex = 0;
+            this.yournamebox.TextChanged += new System.EventHandler(this.yournamebox_TextChanged);
             // 
             // YNGo
             // 

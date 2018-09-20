@@ -28,6 +28,10 @@ namespace L2Project
                 YName = yournamebox.Text;
          
             }
-        
+
+        private void yournamebox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
