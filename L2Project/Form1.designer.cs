@@ -226,7 +226,7 @@
             // 
             // Ynamecombo
             // 
-            this.Ynamecombo.Font = new System.Drawing.Font("Harlow Solid Italic", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ynamecombo.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ynamecombo.ForeColor = System.Drawing.Color.Crimson;
             this.Ynamecombo.FormattingEnabled = true;
             this.Ynamecombo.Items.AddRange(new object[] {

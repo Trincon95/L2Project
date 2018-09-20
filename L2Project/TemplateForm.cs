@@ -22,10 +22,7 @@ namespace L2Project
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void NewTempBox_Enter(object sender, EventArgs e)
         {
@@ -41,6 +38,11 @@ namespace L2Project
             {
                 NewTempBox.Text = "Design New Template Here";
             }
+        }
+
+        private void Createbutton_Click(object sender, EventArgs e)
+        {
+            string templatetitle = NewTempTitlebox.Text;
         }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.NewTempBox = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Createbutton = new System.Windows.Forms.Button();
             this.NewTempTitlebox = new System.Windows.Forms.TextBox();
             this.NewTemplatelabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -46,15 +46,15 @@
             this.NewTempBox.Enter += new System.EventHandler(this.NewTempBox_Enter);
             this.NewTempBox.Leave += new System.EventHandler(this.NewTempBox_Leave);
             // 
-            // button2
+            // Createbutton
             // 
-            this.button2.Location = new System.Drawing.Point(554, 372);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(218, 46);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Create";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Createbutton.Location = new System.Drawing.Point(554, 372);
+            this.Createbutton.Name = "Createbutton";
+            this.Createbutton.Size = new System.Drawing.Size(218, 46);
+            this.Createbutton.TabIndex = 2;
+            this.Createbutton.Text = "Create";
+            this.Createbutton.UseVisualStyleBackColor = true;
+            this.Createbutton.Click += new System.EventHandler(this.Createbutton_Click);
             // 
             // NewTempTitlebox
             // 
@@ -83,7 +83,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.NewTemplatelabel);
             this.Controls.Add(this.NewTempTitlebox);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Createbutton);
             this.Controls.Add(this.NewTempBox);
             this.Name = "TemplateForm";
             this.Text = "TemplateForm";
@@ -96,7 +96,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox NewTempBox;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Createbutton;
         private System.Windows.Forms.TextBox NewTempTitlebox;
         private System.Windows.Forms.Label NewTemplatelabel;
     }
