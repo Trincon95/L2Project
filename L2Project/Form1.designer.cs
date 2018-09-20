@@ -114,6 +114,7 @@
             this.CreateNewButton.TabIndex = 5;
             this.CreateNewButton.Text = "Create New";
             this.CreateNewButton.UseVisualStyleBackColor = false;
+            this.CreateNewButton.Click += new System.EventHandler(this.CreateNewButton_Click);
             // 
             // Copybut
             // 

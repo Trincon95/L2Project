@@ -1,4 +1,5 @@
-﻿using System;
+﻿using L2Project;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -121,18 +122,6 @@ namespace round2project
                 string secondarye = subject + semail + semail1 + semail2 + semail3;
                 Clipboard.SetText(secondarye);
             }
-            if (comboBox1.Text == "Final Email")
-            {
-                string subject = "*(Final Reminder) Aura Issue INC#" + Tnumbox.Text + "\n" + "\n";
-                string femail = "Hello " + Cnamebox.Text + "," + "\n" + "I am with 2nd level support assigned to Incident INC" + Tnumbox.Text + " reported with Aura." + "\n";
-                string femail1 = "With regard to this incident, we have made an attempt to approach you twice in the past few days." + "\n";
-                string femail2 = "Please be advised that if  we don't hear back by the end of business TODAY, we will consider the issue to be resolved and close the ticket with following status 'no action needed / no return contact by customer'." + "\n";
-                string femail3 = "Please let us know ASAP if you still require our assistance. " + "\n";
-                string femail4 = "Please contact PWC Help to log a new support request should you happen to experience this issue in the future. " + "\n";
-                string femail5 = "Thank you, ";
-                string finale = subject + femail + femail1 + femail2 + femail3 + femail4 + femail5;
-                Clipboard.SetText(finale);
-            }
             if (comboBox1.Text == "IP address")
             {
                 string ip = "May i have your IP address please?" + "\n" + "\n";
@@ -191,5 +180,16 @@ namespace round2project
         {
 
         }
+
+        private void CreateNewButton_Click(object sender, EventArgs e)
+        {
+
+            TemplateForm Tf = new TemplateForm();
+            Tf.ShowDialog();
+
+           
+
+        }   
+       
     }
 }
