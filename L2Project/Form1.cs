@@ -19,7 +19,7 @@ namespace round2project
 
  
 
-        public void Cnamebox_Enter(object sender, EventArgs e)
+        public void Cnamebox_Enter(object sender, EventArgs e) // Creates Placeholder
         {
             if (Cnamebox.Text == "Client ")
             {
@@ -27,7 +27,7 @@ namespace round2project
             }
         }
 
-        public void Cnamebox_Leave(object sender, EventArgs e)
+        public void Cnamebox_Leave(object sender, EventArgs e) //Creates Placeholder
         {
             if (Cnamebox.Text == "")
             {
@@ -35,7 +35,7 @@ namespace round2project
             }
         }
 
-        public void Tnumbox_Enter(object sender, EventArgs e)
+        public void Tnumbox_Enter(object sender, EventArgs e) // Creates Placeholder
         {
             if (Tnumbox.Text == "Ticket #")
             {
@@ -43,7 +43,7 @@ namespace round2project
             }
         }
 
-        public void Tnumbox_Leave(object sender, EventArgs e)
+        public void Tnumbox_Leave(object sender, EventArgs e) //Creates Placeholder
         {
             if (Tnumbox.Text == "")
             {
@@ -51,7 +51,7 @@ namespace round2project
             }
         }
 
-        public void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        public void comboBox1_SelectedIndexChanged(object sender, EventArgs e) //Suspension template text boxes visibility
         {
             if (comboBox1.Text == "Suspension")
             {
