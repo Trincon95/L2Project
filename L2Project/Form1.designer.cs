@@ -267,6 +267,7 @@
             this.Name = "Primary";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Primary";
+            this.Load += new System.EventHandler(this.Primary_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

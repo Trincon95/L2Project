@@ -186,5 +186,10 @@ namespace round2project
 
 
         }
+
+        private void Primary_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using round2project;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,12 @@ namespace L2Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Intro());
+            Application.Run(new Primary());
         }
+    }
+
+    internal class Form1 : Form
+    {
+
     }
 }
