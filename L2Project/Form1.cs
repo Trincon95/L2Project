@@ -175,19 +175,19 @@ namespace round2project
 
 
         }
-
+        
         private void Primary_Load(object sender, EventArgs e)
         {
 
         }
+   
 
         private void CreateNewButton_Click(object sender, EventArgs e)
         {
 
-            TemplateForm Tf = new TemplateForm();
+            L2Project.TemplateForm Tf = new TemplateForm();
             Tf.ShowDialog();
 
-           
 
         }
 

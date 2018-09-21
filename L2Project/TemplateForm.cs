@@ -1,4 +1,5 @@
-﻿using System;
+﻿using round2project;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,9 @@ namespace L2Project
         {
             InitializeComponent();
         }
+ 
+
+
 
         private void TemplateForm_Load(object sender, EventArgs e)
         {
@@ -40,9 +44,14 @@ namespace L2Project
             }
         }
 
-        private void Createbutton_Click(object sender, EventArgs e)
+        public void Createbutton_Click(object sender, EventArgs e)
         {
             string templatetitle = NewTempTitlebox.Text;
+          
+            
+            
+
         }
+        
     }
 }
