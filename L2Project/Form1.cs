@@ -73,7 +73,9 @@ namespace round2project
 
             
         }
-        
+       
+
+
 
         public void Copybut_Click(object sender, EventArgs e)
         {
@@ -128,6 +130,10 @@ namespace round2project
                     string ip1 = "This can be found by Search > My Computer info";
                 string ipadd = ip + ip1;
                 Clipboard.SetText(ipadd);
+            }
+            if(comboBox1.Text == TemplateForm.templatetitle)
+            {
+                
             }
             CopyLabel.Show();
         }
