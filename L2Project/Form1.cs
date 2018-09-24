@@ -85,7 +85,7 @@ namespace round2project
             {
                 string hangouts = "Hey " + Cnamebox.Text + ",";
                 string hangouts1 = "My name is " + Ynamecombo.Text + ". I am with L2 Aura Support.  Please advise me when it is a good time to resolve your issue INC" + Tnumbox.Text + ". ";
-                string hangouts2 = hangouts + "\n" + hangouts1;
+                string hangouts2 = hangouts + "\n" + "\n" + hangouts1;
                 
                 Clipboard.SetText(hangouts2);
             }
@@ -107,21 +107,21 @@ namespace round2project
               if (comboBox1.Text == "Primary Email")
             {
                 string subject = "Aura Issue INC#" + Tnumbox.Text + "\n" + "\n";
-                string pemail = "Hi " + Cnamebox.Text + "," + "\n" + "Hope you are doing well!" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n";
+                string pemail = "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n";
                 string pemail1 = "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n";
                 string pemail2 = "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n";
                 string pemail3 = "Thanks,";
-                string primarye = subject + pemail + pemail1 + pemail2 + pemail3;
+                string primarye = subject + pemail + pemail1 + pemail2 + "\n" + pemail3;
                 Clipboard.SetText(primarye);
             }
             if (comboBox1.Text == "Reminder Email")
             {
                 string subject = "*(Reminder) Aura Issue INC#" + Tnumbox.Text + "\n" + "\n";
-                string semail = "Hi " + Cnamebox.Text + "," + "\n" + "Hope you are doing well!" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n";
+                string semail = "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n";
                 string semail1 = "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n";
                 string semail2 = "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n";
                 string semail3 = "Thanks,";
-                string secondarye = subject + semail + semail1 + semail2 + semail3;
+                string secondarye = subject + semail + semail1 + semail2 + "\n" + semail3;
                 Clipboard.SetText(secondarye);
             }
             if (comboBox1.Text == "IP address")
