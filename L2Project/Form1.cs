@@ -131,10 +131,7 @@ namespace round2project
                 string ipadd = ip + ip1;
                 Clipboard.SetText(ipadd);
             }
-            if(comboBox1.Text == TemplateForm.templatetitle)
-            {
-                
-            }
+    
             CopyLabel.Show();
         }
 
@@ -200,6 +197,11 @@ namespace round2project
         private void Cnamebox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBox1_Click(object sender, EventArgs e)
+        {
+            CopyLabel.Hide();
         }
     }
 }

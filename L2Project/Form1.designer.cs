@@ -50,7 +50,7 @@
             this.Cnamebox.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cnamebox.ForeColor = System.Drawing.Color.Crimson;
             this.Cnamebox.Location = new System.Drawing.Point(70, 282);
-            this.Cnamebox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cnamebox.Margin = new System.Windows.Forms.Padding(4);
             this.Cnamebox.Name = "Cnamebox";
             this.Cnamebox.Size = new System.Drawing.Size(189, 32);
             this.Cnamebox.TabIndex = 1;
@@ -65,7 +65,7 @@
             this.Tnumbox.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tnumbox.ForeColor = System.Drawing.Color.Crimson;
             this.Tnumbox.Location = new System.Drawing.Point(70, 338);
-            this.Tnumbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tnumbox.Margin = new System.Windows.Forms.Padding(4);
             this.Tnumbox.Name = "Tnumbox";
             this.Tnumbox.Size = new System.Drawing.Size(189, 32);
             this.Tnumbox.TabIndex = 2;
@@ -108,21 +108,22 @@
             "Hangouts message",
             "IP address"});
             this.comboBox1.Location = new System.Drawing.Point(408, 276);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(287, 42);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.Click += new System.EventHandler(this.comboBox1_Click);
             // 
             // CreateNewButton
             // 
             this.CreateNewButton.BackColor = System.Drawing.Color.CadetBlue;
-            this.CreateNewButton.Font = new System.Drawing.Font("Harlow Solid Italic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateNewButton.Font = new System.Drawing.Font("Harlow Solid Italic", 20F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateNewButton.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.CreateNewButton.Location = new System.Drawing.Point(695, 538);
-            this.CreateNewButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreateNewButton.Location = new System.Drawing.Point(693, 514);
+            this.CreateNewButton.Margin = new System.Windows.Forms.Padding(4);
             this.CreateNewButton.Name = "CreateNewButton";
-            this.CreateNewButton.Size = new System.Drawing.Size(300, 176);
+            this.CreateNewButton.Size = new System.Drawing.Size(302, 200);
             this.CreateNewButton.TabIndex = 5;
             this.CreateNewButton.Text = "Create New";
             this.CreateNewButton.UseVisualStyleBackColor = false;
@@ -134,7 +135,7 @@
             this.Copybut.Font = new System.Drawing.Font("Harlow Solid Italic", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Copybut.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.Copybut.Location = new System.Drawing.Point(70, 514);
-            this.Copybut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Copybut.Margin = new System.Windows.Forms.Padding(4);
             this.Copybut.Name = "Copybut";
             this.Copybut.Size = new System.Drawing.Size(364, 200);
             this.Copybut.TabIndex = 6;
@@ -192,7 +193,7 @@
             // 
             this.MoCbox.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MoCbox.Location = new System.Drawing.Point(424, 384);
-            this.MoCbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MoCbox.Margin = new System.Windows.Forms.Padding(4);
             this.MoCbox.Name = "MoCbox";
             this.MoCbox.Size = new System.Drawing.Size(271, 32);
             this.MoCbox.TabIndex = 12;
@@ -216,7 +217,7 @@
             // 
             this.currentstatbox.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentstatbox.Location = new System.Drawing.Point(424, 438);
-            this.currentstatbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.currentstatbox.Margin = new System.Windows.Forms.Padding(4);
             this.currentstatbox.Multiline = true;
             this.currentstatbox.Name = "currentstatbox";
             this.currentstatbox.Size = new System.Drawing.Size(271, 32);
@@ -230,7 +231,7 @@
             this.resetbutton.Font = new System.Drawing.Font("Harlow Solid Italic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resetbutton.ForeColor = System.Drawing.Color.Crimson;
             this.resetbutton.Location = new System.Drawing.Point(490, 591);
-            this.resetbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resetbutton.Margin = new System.Windows.Forms.Padding(4);
             this.resetbutton.Name = "resetbutton";
             this.resetbutton.Size = new System.Drawing.Size(161, 88);
             this.resetbutton.TabIndex = 15;
@@ -251,7 +252,7 @@
             "Ariel",
             "Shadi"});
             this.Ynamecombo.Location = new System.Drawing.Point(70, 222);
-            this.Ynamecombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Ynamecombo.Margin = new System.Windows.Forms.Padding(4);
             this.Ynamecombo.Name = "Ynamecombo";
             this.Ynamecombo.Size = new System.Drawing.Size(189, 42);
             this.Ynamecombo.TabIndex = 18;
@@ -279,7 +280,7 @@
             this.Controls.Add(this.Tnumbox);
             this.Controls.Add(this.Cnamebox);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Primary";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Primary";

@@ -45,9 +45,6 @@ namespace L2Project
             string templatetitle = NewTempTitlebox.Text;
         }
 
-        public static string templatetitle
-        {
-            get { return templatetitle; }
-        }
+      
     }
 }
