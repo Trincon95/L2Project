@@ -40,9 +40,10 @@
             this.NewTempBox.Location = new System.Drawing.Point(0, 73);
             this.NewTempBox.Multiline = true;
             this.NewTempBox.Name = "NewTempBox";
-            this.NewTempBox.Size = new System.Drawing.Size(802, 269);
+            this.NewTempBox.Size = new System.Drawing.Size(800, 258);
             this.NewTempBox.TabIndex = 0;
             this.NewTempBox.Text = "Design New Template Here";
+            this.NewTempBox.TextChanged += new System.EventHandler(this.NewTempBox_TextChanged);
             this.NewTempBox.Enter += new System.EventHandler(this.NewTempBox_Enter);
             this.NewTempBox.Leave += new System.EventHandler(this.NewTempBox_Leave);
             // 
@@ -64,6 +65,7 @@
             this.NewTempTitlebox.Size = new System.Drawing.Size(217, 27);
             this.NewTempTitlebox.TabIndex = 3;
             this.NewTempTitlebox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.NewTempTitlebox.TextChanged += new System.EventHandler(this.NewTempTitlebox_TextChanged);
             // 
             // NewTemplatelabel
             // 
