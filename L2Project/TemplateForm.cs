@@ -46,7 +46,13 @@ namespace L2Project
 
         private void Createbutton_Click(object sender, EventArgs e)
         {
-           //TextWriter writer = new StreamWriter()
+            CreateNewFilePath();
+
+            System.IO.StreamWriter writer = new System.IO.StreamWriter(@"c:\Templates\templates.text");
+            writer.Write(NewTempBox.Text);
+            writer.Close();
+
+          
         }
 
 
@@ -60,7 +66,19 @@ namespace L2Project
         {
             string templatetitle = NewTempTitlebox.Text;
         }
-   
+        private static void CreateNewFilePath()
+        {
+            string Templates = @"c:\Templates";
+           
+            System.IO.Directory.CreateDirectory(Templates);
+
+            File.Create(@"c:\Templates\templates.text").Close();
+
+         
+
+
+
+        }
 
        
     }
