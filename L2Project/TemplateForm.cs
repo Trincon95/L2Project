@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +14,8 @@ namespace L2Project
 {
     public partial class TemplateForm : Form
     {
+       
+
         public TemplateForm()
         {
             InitializeComponent();
@@ -42,12 +46,22 @@ namespace L2Project
 
         private void Createbutton_Click(object sender, EventArgs e)
         {
-            string templatetitle = NewTempTitlebox.Text;
+           //TextWriter writer = new StreamWriter()
         }
 
-        public static string templatetitle
+
+        private void NewTempBox_TextChanged(object sender, EventArgs e)
         {
-            get { return templatetitle; }
+            string templateText = NewTempBox.Text;
+
         }
+
+        private void NewTempTitlebox_TextChanged(object sender, EventArgs e)
+        {
+            string templatetitle = NewTempTitlebox.Text;
+        }
+   
+
+       
     }
 }

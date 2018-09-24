@@ -171,12 +171,13 @@
             // 
             this.MoClabel.AutoSize = true;
             this.MoClabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MoClabel.Location = new System.Drawing.Point(308, 269);
+            this.MoClabel.Location = new System.Drawing.Point(281, 267);
             this.MoClabel.Name = "MoClabel";
             this.MoClabel.Size = new System.Drawing.Size(182, 21);
             this.MoClabel.TabIndex = 11;
             this.MoClabel.Text = "Mode of Communication:";
             this.MoClabel.Visible = false;
+            this.MoClabel.Click += new System.EventHandler(this.MoClabel_Click);
             // 
             // MoCbox
             // 
