@@ -49,10 +49,9 @@
             // 
             this.Cnamebox.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cnamebox.ForeColor = System.Drawing.Color.Crimson;
-            this.Cnamebox.Location = new System.Drawing.Point(70, 282);
-            this.Cnamebox.Margin = new System.Windows.Forms.Padding(4);
+            this.Cnamebox.Location = new System.Drawing.Point(52, 226);
             this.Cnamebox.Name = "Cnamebox";
-            this.Cnamebox.Size = new System.Drawing.Size(189, 32);
+            this.Cnamebox.Size = new System.Drawing.Size(143, 26);
             this.Cnamebox.TabIndex = 1;
             this.Cnamebox.Text = "Customer Name";
             this.Cnamebox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -64,10 +63,9 @@
             // 
             this.Tnumbox.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tnumbox.ForeColor = System.Drawing.Color.Crimson;
-            this.Tnumbox.Location = new System.Drawing.Point(70, 338);
-            this.Tnumbox.Margin = new System.Windows.Forms.Padding(4);
+            this.Tnumbox.Location = new System.Drawing.Point(52, 270);
             this.Tnumbox.Name = "Tnumbox";
-            this.Tnumbox.Size = new System.Drawing.Size(189, 32);
+            this.Tnumbox.Size = new System.Drawing.Size(143, 26);
             this.Tnumbox.TabIndex = 2;
             this.Tnumbox.Text = "Ticket #";
             this.Tnumbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -78,10 +76,9 @@
             // 
             this.Title.AutoSize = true;
             this.Title.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title.Location = new System.Drawing.Point(252, 22);
-            this.Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Title.Location = new System.Drawing.Point(189, 18);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(554, 162);
+            this.Title.Size = new System.Drawing.Size(419, 122);
             this.Title.TabIndex = 3;
             this.Title.Text = "Aura L2 Template \r\nGenerator ";
             this.Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -107,11 +104,10 @@
             "Suspension",
             "Hangouts message",
             "IP address"});
-            this.comboBox1.Location = new System.Drawing.Point(408, 276);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Location = new System.Drawing.Point(306, 221);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(287, 42);
-            this.comboBox1.TabIndex = 4;
+            this.comboBox1.Size = new System.Drawing.Size(216, 33);
+            this.comboBox1.TabIndex = 5;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.comboBox1.Click += new System.EventHandler(this.comboBox1_Click);
             // 
@@ -120,10 +116,9 @@
             this.CreateNewButton.BackColor = System.Drawing.Color.CadetBlue;
             this.CreateNewButton.Font = new System.Drawing.Font("Harlow Solid Italic", 20F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateNewButton.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.CreateNewButton.Location = new System.Drawing.Point(693, 514);
-            this.CreateNewButton.Margin = new System.Windows.Forms.Padding(4);
+            this.CreateNewButton.Location = new System.Drawing.Point(53, 413);
             this.CreateNewButton.Name = "CreateNewButton";
-            this.CreateNewButton.Size = new System.Drawing.Size(302, 200);
+            this.CreateNewButton.Size = new System.Drawing.Size(226, 160);
             this.CreateNewButton.TabIndex = 5;
             this.CreateNewButton.Text = "Create New";
             this.CreateNewButton.UseVisualStyleBackColor = false;
@@ -134,10 +129,9 @@
             this.Copybut.BackColor = System.Drawing.Color.CadetBlue;
             this.Copybut.Font = new System.Drawing.Font("Harlow Solid Italic", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Copybut.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.Copybut.Location = new System.Drawing.Point(70, 514);
-            this.Copybut.Margin = new System.Windows.Forms.Padding(4);
+            this.Copybut.Location = new System.Drawing.Point(539, 413);
             this.Copybut.Name = "Copybut";
-            this.Copybut.Size = new System.Drawing.Size(364, 200);
+            this.Copybut.Size = new System.Drawing.Size(227, 162);
             this.Copybut.TabIndex = 6;
             this.Copybut.Text = "Copy";
             this.Copybut.UseVisualStyleBackColor = false;
@@ -148,10 +142,9 @@
             this.CopyLabel.AutoSize = true;
             this.CopyLabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CopyLabel.ForeColor = System.Drawing.Color.Crimson;
-            this.CopyLabel.Location = new System.Drawing.Point(65, 739);
-            this.CopyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.CopyLabel.Location = new System.Drawing.Point(49, 591);
             this.CopyLabel.Name = "CopyLabel";
-            this.CopyLabel.Size = new System.Drawing.Size(402, 28);
+            this.CopyLabel.Size = new System.Drawing.Size(291, 21);
             this.CopyLabel.TabIndex = 7;
             this.CopyLabel.Text = "Template has been copied to Clipboard :)";
             this.CopyLabel.Visible = false;
@@ -160,20 +153,18 @@
             // 
             this.Choosetemplate.AutoSize = true;
             this.Choosetemplate.Font = new System.Drawing.Font("Modern No. 20", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Choosetemplate.Location = new System.Drawing.Point(476, 240);
-            this.Choosetemplate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Choosetemplate.Location = new System.Drawing.Point(357, 192);
             this.Choosetemplate.Name = "Choosetemplate";
-            this.Choosetemplate.Size = new System.Drawing.Size(164, 24);
+            this.Choosetemplate.Size = new System.Drawing.Size(120, 18);
             this.Choosetemplate.TabIndex = 9;
             this.Choosetemplate.Text = "Choose Template:";
             // 
             // Resultlabel
             // 
             this.Resultlabel.AutoSize = true;
-            this.Resultlabel.Location = new System.Drawing.Point(444, 328);
-            this.Resultlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Resultlabel.Location = new System.Drawing.Point(333, 262);
             this.Resultlabel.Name = "Resultlabel";
-            this.Resultlabel.Size = new System.Drawing.Size(0, 25);
+            this.Resultlabel.Size = new System.Drawing.Size(0, 20);
             this.Resultlabel.TabIndex = 10;
             this.Resultlabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -181,10 +172,9 @@
             // 
             this.MoClabel.AutoSize = true;
             this.MoClabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MoClabel.Location = new System.Drawing.Point(151, 388);
-            this.MoClabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MoClabel.Location = new System.Drawing.Point(113, 310);
             this.MoClabel.Name = "MoClabel";
-            this.MoClabel.Size = new System.Drawing.Size(252, 28);
+            this.MoClabel.Size = new System.Drawing.Size(182, 21);
             this.MoClabel.TabIndex = 11;
             this.MoClabel.Text = "Mode of Communication:";
             this.MoClabel.Visible = false;
@@ -192,10 +182,9 @@
             // MoCbox
             // 
             this.MoCbox.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MoCbox.Location = new System.Drawing.Point(424, 384);
-            this.MoCbox.Margin = new System.Windows.Forms.Padding(4);
+            this.MoCbox.Location = new System.Drawing.Point(318, 307);
             this.MoCbox.Name = "MoCbox";
-            this.MoCbox.Size = new System.Drawing.Size(271, 32);
+            this.MoCbox.Size = new System.Drawing.Size(204, 26);
             this.MoCbox.TabIndex = 12;
             this.MoCbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MoCbox.Visible = false;
@@ -204,10 +193,9 @@
             // 
             this.Currentstatuslabel.AutoSize = true;
             this.Currentstatuslabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Currentstatuslabel.Location = new System.Drawing.Point(237, 438);
-            this.Currentstatuslabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Currentstatuslabel.Location = new System.Drawing.Point(178, 350);
             this.Currentstatuslabel.Name = "Currentstatuslabel";
-            this.Currentstatuslabel.Size = new System.Drawing.Size(179, 28);
+            this.Currentstatuslabel.Size = new System.Drawing.Size(129, 21);
             this.Currentstatuslabel.TabIndex = 13;
             this.Currentstatuslabel.Text = "Issue Description:";
             this.Currentstatuslabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -216,11 +204,10 @@
             // currentstatbox
             // 
             this.currentstatbox.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentstatbox.Location = new System.Drawing.Point(424, 438);
-            this.currentstatbox.Margin = new System.Windows.Forms.Padding(4);
+            this.currentstatbox.Location = new System.Drawing.Point(318, 350);
             this.currentstatbox.Multiline = true;
             this.currentstatbox.Name = "currentstatbox";
-            this.currentstatbox.Size = new System.Drawing.Size(271, 32);
+            this.currentstatbox.Size = new System.Drawing.Size(204, 26);
             this.currentstatbox.TabIndex = 14;
             this.currentstatbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.currentstatbox.Visible = false;
@@ -230,10 +217,9 @@
             this.resetbutton.AutoSize = true;
             this.resetbutton.Font = new System.Drawing.Font("Harlow Solid Italic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resetbutton.ForeColor = System.Drawing.Color.Crimson;
-            this.resetbutton.Location = new System.Drawing.Point(490, 591);
-            this.resetbutton.Margin = new System.Windows.Forms.Padding(4);
+            this.resetbutton.Location = new System.Drawing.Point(368, 473);
             this.resetbutton.Name = "resetbutton";
-            this.resetbutton.Size = new System.Drawing.Size(161, 88);
+            this.resetbutton.Size = new System.Drawing.Size(121, 70);
             this.resetbutton.TabIndex = 15;
             this.resetbutton.Text = "Reset";
             this.resetbutton.UseVisualStyleBackColor = true;
@@ -251,19 +237,18 @@
             "Tania",
             "Ariel",
             "Shadi"});
-            this.Ynamecombo.Location = new System.Drawing.Point(70, 222);
-            this.Ynamecombo.Margin = new System.Windows.Forms.Padding(4);
+            this.Ynamecombo.Location = new System.Drawing.Point(52, 178);
             this.Ynamecombo.Name = "Ynamecombo";
-            this.Ynamecombo.Size = new System.Drawing.Size(189, 42);
+            this.Ynamecombo.Size = new System.Drawing.Size(143, 33);
             this.Ynamecombo.TabIndex = 18;
             this.Ynamecombo.Text = "Name";
             // 
             // Primary
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(1037, 805);
+            this.ClientSize = new System.Drawing.Size(778, 644);
             this.Controls.Add(this.Ynamecombo);
             this.Controls.Add(this.resetbutton);
             this.Controls.Add(this.currentstatbox);
@@ -280,7 +265,6 @@
             this.Controls.Add(this.Tnumbox);
             this.Controls.Add(this.Cnamebox);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Primary";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Primary";

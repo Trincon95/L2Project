@@ -54,6 +54,8 @@ namespace round2project
 
         public void comboBox1_SelectedIndexChanged(object sender, EventArgs e) //Suspension template text boxes visibility
         {
+           
+
             if (comboBox1.Text == "Suspension")
             {
                 MoClabel.Show();
@@ -69,17 +71,11 @@ namespace round2project
                 Currentstatuslabel.Hide();
             }
    
-            
-
-            
-        }
+         }
        
-
-
-
         public void Copybut_Click(object sender, EventArgs e)
         {
-          
+            
 
             if (comboBox1.Text == "Hangouts message")
             {

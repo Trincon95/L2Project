@@ -27,7 +27,6 @@ namespace L2Project
         }
 
 
-
         private void NewTempBox_Enter(object sender, EventArgs e)
         {
             if (NewTempBox.Text == "Design New Template Here")
@@ -43,15 +42,36 @@ namespace L2Project
                 NewTempBox.Text = "Design New Template Here";
             }
         }
+        private void NewTempTitlebox_TextChanged(object sender, EventArgs e)
+        {
 
+            
+
+
+        }
         private void Createbutton_Click(object sender, EventArgs e)
         {
-            CreateNewFilePath();
+            CreateNewFilePath(); //when you click on create button it will create the template folder
 
-            System.IO.StreamWriter writer = new System.IO.StreamWriter(@"c:\Templates\templates.text");
-            writer.Write(NewTempBox.Text);
-            writer.Close();
+            string templatetitle = NewTempTitlebox.Text; 
 
+            string fileName = @"c:\Templates\" + templatetitle + ".text"; // stores file text name into fileName variable. It will take the folder name, add title of template and text extension
+       
+            if (File.Exists(fileName)) //checks if FileName already exists
+            {
+                MessageBox.Show("Template name already exists"); //if fileName exists, it will not create a new template 
+
+            }
+            else
+            {
+                System.IO.StreamWriter writer = new System.IO.StreamWriter(fileName); // if it does not exist, it will create text file
+                writer.Write(NewTempBox.Text); //Writes your template into text file
+                writer.Close(); 
+
+                MessageBox.Show("Your new template has been created!");
+                this.Close();
+            }
+            
           
         }
 
@@ -62,22 +82,13 @@ namespace L2Project
 
         }
 
-        private void NewTempTitlebox_TextChanged(object sender, EventArgs e)
-        {
-            string templatetitle = NewTempTitlebox.Text;
-        }
-        private static void CreateNewFilePath()
+      
+        private static void CreateNewFilePath() // creates template folder if it does not already exist
         {
             string Templates = @"c:\Templates";
            
             System.IO.Directory.CreateDirectory(Templates);
-
-            File.Create(@"c:\Templates\templates.text").Close();
-
-         
-
-
-
+            
         }
 
        
