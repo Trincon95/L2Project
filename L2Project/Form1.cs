@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace round2project
 {
-    public partial class Primary : Form
+    public partial class form1 : Form
     {
-        public Primary()
+        public form1()
         {
             InitializeComponent();
             
@@ -147,6 +147,7 @@ namespace round2project
                 {
                     c.Text = "";
                 }
+          
             }
 
 
@@ -212,6 +213,7 @@ namespace round2project
 
             L2Project.TemplateForm Tf = new TemplateForm();
             Tf.ShowDialog();
+            this.Hide();
             
 
         }

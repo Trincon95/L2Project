@@ -1,4 +1,5 @@
-﻿using System;
+﻿using round2project;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -71,7 +72,9 @@ namespace L2Project
                 MessageBox.Show("Your new template has been created!");
 
 
-                this.Close();
+                Close();
+               
+               // Show(form1);
 
                 //round2project.Primary F = new round2project.Primary();
                 //F.Show();
