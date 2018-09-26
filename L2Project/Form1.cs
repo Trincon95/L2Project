@@ -177,7 +177,15 @@ namespace round2project
         
         private void Primary_Load(object sender, EventArgs e)
         {
+            string[] fileArray = Directory.GetFiles(@"c:\Templates");
 
+
+            //List<string> fileList = fileArray.ToList();
+
+            foreach (string name in fileArray)
+
+                //  string templateName = Path.GetFileNameWithoutExtension(name);
+                comboBox1.Items.Add(Path.GetFileNameWithoutExtension(name));
         }
    
 
@@ -197,30 +205,14 @@ namespace round2project
 
         private void comboBox1_Click(object sender, EventArgs e)
         {
-            ReadFiles();
+         
 
-            
-            
+
+
         }
 
 
-        private static void ReadFiles()//string targetDirectory)
-        {
-            string[] fileArray = Directory.GetFiles(@"c:\Templates");
-
-            //List<string> fileList = fileArray.ToList();
-
-            foreach (string name in fileArray)
-            {
-                string templateName = Path.GetFileNameWithoutExtension(name);
-                
-            }
-           // MessageBox.Show("Got files");
-
-
-
-
-
+  
+        
         }
     }
-}
