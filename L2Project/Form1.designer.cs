@@ -152,11 +152,11 @@
             // Choosetemplate
             // 
             this.Choosetemplate.AutoSize = true;
-            this.Choosetemplate.Font = new System.Drawing.Font("Constantia", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Choosetemplate.Location = new System.Drawing.Point(332, 260);
+            this.Choosetemplate.Font = new System.Drawing.Font("Constantia", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Choosetemplate.Location = new System.Drawing.Point(310, 255);
             this.Choosetemplate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Choosetemplate.Name = "Choosetemplate";
-            this.Choosetemplate.Size = new System.Drawing.Size(214, 29);
+            this.Choosetemplate.Size = new System.Drawing.Size(242, 33);
             this.Choosetemplate.TabIndex = 9;
             this.Choosetemplate.Text = "Choose Template:";
             // 
@@ -173,11 +173,11 @@
             // MoClabel
             // 
             this.MoClabel.AutoSize = true;
-            this.MoClabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MoClabel.Location = new System.Drawing.Point(206, 364);
+            this.MoClabel.Font = new System.Drawing.Font("Adobe Devanagari", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MoClabel.Location = new System.Drawing.Point(188, 363);
             this.MoClabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MoClabel.Name = "MoClabel";
-            this.MoClabel.Size = new System.Drawing.Size(216, 24);
+            this.MoClabel.Size = new System.Drawing.Size(246, 33);
             this.MoClabel.TabIndex = 11;
             this.MoClabel.Text = "Mode of Communication:";
             this.MoClabel.Visible = false;
@@ -198,11 +198,11 @@
             // Currentstatuslabel
             // 
             this.Currentstatuslabel.AutoSize = true;
-            this.Currentstatuslabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Currentstatuslabel.Location = new System.Drawing.Point(249, 416);
+            this.Currentstatuslabel.Font = new System.Drawing.Font("Adobe Devanagari", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Currentstatuslabel.Location = new System.Drawing.Point(232, 416);
             this.Currentstatuslabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Currentstatuslabel.Name = "Currentstatuslabel";
-            this.Currentstatuslabel.Size = new System.Drawing.Size(173, 24);
+            this.Currentstatuslabel.Size = new System.Drawing.Size(198, 33);
             this.Currentstatuslabel.TabIndex = 13;
             this.Currentstatuslabel.Text = "Analysis Performed:";
             this.Currentstatuslabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
