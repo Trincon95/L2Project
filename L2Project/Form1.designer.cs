@@ -255,7 +255,6 @@
             this.Ynamecombo.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Ynamecombo.Size = new System.Drawing.Size(294, 36);
             this.Ynamecombo.TabIndex = 3;
-            this.Ynamecombo.Text = "Name";
             // 
             // label1
             // 
