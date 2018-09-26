@@ -183,36 +183,34 @@ namespace round2project
 
         private void Primary_Load(object sender, EventArgs e)
         {
-
+           
+            //creates folder for templates to be stored
             string Templates = @"c:\Templates";
-
             System.IO.Directory.CreateDirectory(Templates);
-
-          //  string[] fileArray = Directory.GetFiles(@"c:\Templates");
+            DropDown_Add();
+            //Adds title of template to combobox
+          // string[] fileArray = Directory.GetFiles(@"c:\Templates");
+          // foreach (string name in fileArray)
+         // comboBox1.Items.Add(Path.GetFileNameWithoutExtension(name));
 
 
             //List<string> fileList = fileArray.ToList();
-
-           // foreach (string name in fileArray)
-
-                //  string templateName = Path.GetFileNameWithoutExtension(name);
-               // comboBox1.Items.Add(Path.GetFileNameWithoutExtension(name));
-
-
+           
+            //  string templateName = Path.GetFileNameWithoutExtension(name);
 
 
         }
 
 
 
-
-
         private void CreateNewButton_Click(object sender, EventArgs e)
         {
-
+            
             L2Project.TemplateForm Tf = new TemplateForm();
             Tf.ShowDialog();
-
+            this.Close();
+            
+                    
 
         }
 
@@ -230,15 +228,10 @@ namespace round2project
 
         private void DropDown_Add()
         {
-            string[] fileArray = Directory.GetFiles(@"c:\Templates");
-
-
-            //List<string> fileList = fileArray.ToList();
-
+            
+           string[] fileArray = Directory.GetFiles(@"c:\Templates");
             foreach (string name in fileArray)
-
-                //  string templateName = Path.GetFileNameWithoutExtension(name);
-                comboBox1.Items.Add(Path.GetFileNameWithoutExtension(name));
+            comboBox1.Items.Add(Path.GetFileNameWithoutExtension(name));
             
 
 
@@ -246,8 +239,8 @@ namespace round2project
 
         private void refreshButton_Click(object sender, EventArgs e)
         {
+
             
-            DropDown_Add();
 
         }
     }

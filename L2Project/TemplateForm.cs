@@ -71,11 +71,14 @@ namespace L2Project
                 MessageBox.Show("Your new template has been created!");
 
 
-                this.Close();
+                
+                    this.Hide();               
+                    round2project.Primary F = new round2project.Primary();
+                    F.ShowDialog();
+                
+                
 
-                //round2project.Primary F = new round2project.Primary();
-                //F.Show();
-                //F.Refresh();
+
                
 
         }
