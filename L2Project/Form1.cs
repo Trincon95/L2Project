@@ -17,10 +17,10 @@ namespace round2project
         public Primary()
         {
             InitializeComponent();
-            
+
         }
 
- 
+
 
         public void Cnamebox_Enter(object sender, EventArgs e) // Creates Placeholder
         {
@@ -56,7 +56,7 @@ namespace round2project
 
         public void comboBox1_SelectedIndexChanged(object sender, EventArgs e) //Suspension template text boxes visibility
         {
-                    
+
             if (comboBox1.Text == "Suspension")
             {
                 MoClabel.Show();
@@ -64,19 +64,19 @@ namespace round2project
                 Currentstatuslabel.Show();
                 currentstatbox.Show();
             }
-            if (comboBox1.Text .Contains("Suspension") == false)
+            if (comboBox1.Text.Contains("Suspension") == false)
             {
                 MoCbox.Hide();
                 MoClabel.Hide();
                 currentstatbox.Hide();
                 Currentstatuslabel.Hide();
             }
-   
-         }
-       
+
+        }
+
         public void Copybut_Click(object sender, EventArgs e)
         {
-           
+
 
             if (comboBox1.Text == "Hangouts message")
             {
@@ -84,13 +84,13 @@ namespace round2project
                 string hangouts1 = "My name is " + Ynamecombo.Text + ". I am with L2 Aura Support.  Please advise me when it is a good time to resolve your issue INC" + Tnumbox.Text + ". ";
                 string hangouts2 = hangouts + "\n" + "\n" + hangouts1;
 
-                previewTextLabel.Text = hangouts2;                   
+                previewTextLabel.Text = hangouts2;
                 Clipboard.SetText(hangouts2);
-                
+
             }
-              if (comboBox1.Text == "Suspension")
+            if (comboBox1.Text == "Suspension")
             {
-                
+
                 string username = "Username: " + Cnamebox.Text;
                 string modeofcom = "Mode of Communication: " + MoCbox.Text;
                 string status = "Analysis Performed & Current Status: " + currentstatbox.Text;
@@ -103,7 +103,7 @@ namespace round2project
                 Clipboard.SetText(suspension);
                 previewTextLabel.Text = suspension;
             }
-              if (comboBox1.Text == "Primary Email")
+            if (comboBox1.Text == "Primary Email")
             {
                 string subject = "Aura Issue INC#" + Tnumbox.Text + "\n" + "\n";
                 string pemail = "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n";
@@ -128,22 +128,22 @@ namespace round2project
             if (comboBox1.Text == "IP address")
             {
                 string ip = "May i have your IP address please?" + "\n" + "\n";
-                    string ip1 = "This can be found by Search > My Computer info";
+                string ip1 = "This can be found by Search > My Computer info";
                 string ipadd = ip + ip1;
                 Clipboard.SetText(ipadd);
                 previewTextLabel.Text = ipadd;
             }
-    
+
             CopyLabel.Show();
         }
 
-     
-     
+
+
         private void resetbutton_Click(object sender, EventArgs e)
         {
             foreach (Control c in Controls)
             {
-                if(c is TextBox)
+                if (c is TextBox)
                 {
                     c.Text = "";
                 }
@@ -151,33 +151,33 @@ namespace round2project
 
 
             CopyLabel.Hide();
-            
-            
+
+
             if (Cnamebox.Text == "Customer Name")
-                {
-                    Cnamebox.Text = "";
-                }
-            
+            {
+                Cnamebox.Text = "";
+            }
+
             if (Cnamebox.Text == "")
-                {
-                    Cnamebox.Text = "Customer Name";
-                }
-            
+            {
+                Cnamebox.Text = "Customer Name";
+            }
 
- 
-                if (Tnumbox.Text == "Ticket #")
-                {
-                    Tnumbox.Text = "";
-                }
-            
 
- 
-                if (Tnumbox.Text == "")
-                {
-                    Tnumbox.Text = "Ticket #";
-                }
-            
-                
+
+            if (Tnumbox.Text == "Ticket #")
+            {
+                Tnumbox.Text = "";
+            }
+
+
+
+            if (Tnumbox.Text == "")
+            {
+                Tnumbox.Text = "Ticket #";
+            }
+
+
 
         }
 
@@ -188,31 +188,31 @@ namespace round2project
 
             System.IO.Directory.CreateDirectory(Templates);
 
-            string[] fileArray = Directory.GetFiles(@"c:\Templates");
-          
-                
-                //List<string> fileList = fileArray.ToList();
+          //  string[] fileArray = Directory.GetFiles(@"c:\Templates");
 
-                foreach (string name in fileArray)
 
-                    //  string templateName = Path.GetFileNameWithoutExtension(name);
-                    comboBox1.Items.Add(Path.GetFileNameWithoutExtension(name));
+            //List<string> fileList = fileArray.ToList();
 
-            
-          
+           // foreach (string name in fileArray)
+
+                //  string templateName = Path.GetFileNameWithoutExtension(name);
+               // comboBox1.Items.Add(Path.GetFileNameWithoutExtension(name));
+
+
+
 
         }
-           
-            
-        
-   
+
+
+
+
 
         private void CreateNewButton_Click(object sender, EventArgs e)
         {
 
             L2Project.TemplateForm Tf = new TemplateForm();
             Tf.ShowDialog();
-            
+
 
         }
 
@@ -224,12 +224,31 @@ namespace round2project
         private void comboBox1_Click(object sender, EventArgs e)
         {
 
+
+
+        }
+
+        private void DropDown_Add()
+        {
+            string[] fileArray = Directory.GetFiles(@"c:\Templates");
+
+
+            //List<string> fileList = fileArray.ToList();
+
+            foreach (string name in fileArray)
+
+                //  string templateName = Path.GetFileNameWithoutExtension(name);
+                comboBox1.Items.Add(Path.GetFileNameWithoutExtension(name));
             
 
+
         }
 
+        private void refreshButton_Click(object sender, EventArgs e)
+        {
+            
+            DropDown_Add();
 
-  
-        
         }
     }
+}

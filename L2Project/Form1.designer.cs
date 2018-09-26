@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Primary));
             this.Cnamebox = new System.Windows.Forms.TextBox();
             this.Tnumbox = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -46,6 +47,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.previewTextLabel = new System.Windows.Forms.Label();
+            this.refreshButton = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.refreshButton)).BeginInit();
             this.SuspendLayout();
             // 
             // Cnamebox
@@ -127,7 +130,7 @@
             this.Copybut.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Copybut.Font = new System.Drawing.Font("Lucida Bright", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Copybut.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.Copybut.Location = new System.Drawing.Point(339, 777);
+            this.Copybut.Location = new System.Drawing.Point(339, 797);
             this.Copybut.Margin = new System.Windows.Forms.Padding(4);
             this.Copybut.Name = "Copybut";
             this.Copybut.Size = new System.Drawing.Size(223, 92);
@@ -141,7 +144,7 @@
             this.CopyLabel.AutoSize = true;
             this.CopyLabel.Font = new System.Drawing.Font("Cambria", 8.142858F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CopyLabel.ForeColor = System.Drawing.Color.DimGray;
-            this.CopyLabel.Location = new System.Drawing.Point(286, 893);
+            this.CopyLabel.Location = new System.Drawing.Point(286, 910);
             this.CopyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CopyLabel.Name = "CopyLabel";
             this.CopyLabel.Size = new System.Drawing.Size(329, 23);
@@ -174,7 +177,7 @@
             // 
             this.MoClabel.AutoSize = true;
             this.MoClabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MoClabel.Location = new System.Drawing.Point(180, 315);
+            this.MoClabel.Location = new System.Drawing.Point(180, 319);
             this.MoClabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MoClabel.Name = "MoClabel";
             this.MoClabel.Size = new System.Drawing.Size(216, 24);
@@ -185,7 +188,7 @@
             // MoCbox
             // 
             this.MoCbox.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MoCbox.Location = new System.Drawing.Point(412, 315);
+            this.MoCbox.Location = new System.Drawing.Point(412, 319);
             this.MoCbox.Margin = new System.Windows.Forms.Padding(4);
             this.MoCbox.Name = "MoCbox";
             this.MoCbox.Size = new System.Drawing.Size(248, 29);
@@ -197,7 +200,7 @@
             // 
             this.Currentstatuslabel.AutoSize = true;
             this.Currentstatuslabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Currentstatuslabel.Location = new System.Drawing.Point(241, 367);
+            this.Currentstatuslabel.Location = new System.Drawing.Point(241, 371);
             this.Currentstatuslabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Currentstatuslabel.Name = "Currentstatuslabel";
             this.Currentstatuslabel.Size = new System.Drawing.Size(155, 24);
@@ -209,7 +212,7 @@
             // currentstatbox
             // 
             this.currentstatbox.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentstatbox.Location = new System.Drawing.Point(412, 367);
+            this.currentstatbox.Location = new System.Drawing.Point(412, 371);
             this.currentstatbox.Margin = new System.Windows.Forms.Padding(4);
             this.currentstatbox.Multiline = true;
             this.currentstatbox.Name = "currentstatbox";
@@ -222,8 +225,8 @@
             // 
             this.resetbutton.AutoSize = true;
             this.resetbutton.Font = new System.Drawing.Font("Lucida Bright", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resetbutton.ForeColor = System.Drawing.Color.Maroon;
-            this.resetbutton.Location = new System.Drawing.Point(591, 806);
+            this.resetbutton.ForeColor = System.Drawing.Color.Firebrick;
+            this.resetbutton.Location = new System.Drawing.Point(587, 826);
             this.resetbutton.Margin = new System.Windows.Forms.Padding(4);
             this.resetbutton.Name = "resetbutton";
             this.resetbutton.Size = new System.Drawing.Size(151, 45);
@@ -285,11 +288,23 @@
             // 
             this.previewTextLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.previewTextLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.previewTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.previewTextLabel.Location = new System.Drawing.Point(8, 421);
             this.previewTextLabel.Name = "previewTextLabel";
             this.previewTextLabel.Size = new System.Drawing.Size(864, 352);
             this.previewTextLabel.TabIndex = 22;
             this.previewTextLabel.Text = "Template copied";
+            // 
+            // refreshButton
+            // 
+            this.refreshButton.Image = ((System.Drawing.Image)(resources.GetObject("refreshButton.Image")));
+            this.refreshButton.Location = new System.Drawing.Point(663, 257);
+            this.refreshButton.Name = "refreshButton";
+            this.refreshButton.Size = new System.Drawing.Size(40, 40);
+            this.refreshButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.refreshButton.TabIndex = 23;
+            this.refreshButton.TabStop = false;
+            this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
             // 
             // Primary
             // 
@@ -297,6 +312,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(884, 957);
+            this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.previewTextLabel);
             this.Controls.Add(this.Cnamebox);
             this.Controls.Add(this.label1);
@@ -321,6 +337,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aura L2 Template";
             this.Load += new System.EventHandler(this.Primary_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.refreshButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,6 +362,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label previewTextLabel;
+        private System.Windows.Forms.PictureBox refreshButton;
     }
 }
 
