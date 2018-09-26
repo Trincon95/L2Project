@@ -233,20 +233,18 @@ namespace round2project
             string[] fileArray = Directory.GetFiles(@"c:\Templates");
             
             string templateName = Path.GetFileNameWithoutExtension(@"c:\Templates");
-
           
 
-            if (comboBox1.Items.Contains(templateName))
-
+            if (File.Exists(templateName))
             {
                 return;
             }
             else
+              //  if (comboBox1.Items.Contains(templateName))
+       
             {
-                foreach (string name in fileArray)
-
-
-                    comboBox1.Items.Add(Path.GetFileNameWithoutExtension(name));
+                comboBox1.Items.Add(templateName);
+      
             }
         }
 
