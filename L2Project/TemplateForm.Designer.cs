@@ -62,7 +62,7 @@
             // NewTempTitlebox
             // 
             this.NewTempTitlebox.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewTempTitlebox.Location = new System.Drawing.Point(216, 29);
+            this.NewTempTitlebox.Location = new System.Drawing.Point(428, 31);
             this.NewTempTitlebox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NewTempTitlebox.Name = "NewTempTitlebox";
             this.NewTempTitlebox.Size = new System.Drawing.Size(264, 30);
@@ -74,7 +74,7 @@
             // 
             this.NewTemplatelabel.AutoSize = true;
             this.NewTemplatelabel.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewTemplatelabel.Location = new System.Drawing.Point(145, 34);
+            this.NewTemplatelabel.Location = new System.Drawing.Point(295, 31);
             this.NewTemplatelabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NewTemplatelabel.Name = "NewTemplatelabel";
             this.NewTemplatelabel.Size = new System.Drawing.Size(61, 23);

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Primary));
             this.Cnamebox = new System.Windows.Forms.TextBox();
             this.Tnumbox = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -47,8 +46,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.previewTextLabel = new System.Windows.Forms.Label();
-            this.refreshButton = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.refreshButton)).BeginInit();
             this.SuspendLayout();
             // 
             // Cnamebox
@@ -90,7 +87,7 @@
             "IP address"});
             this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox1.BackColor = System.Drawing.Color.LightGray;
+            this.comboBox1.BackColor = System.Drawing.Color.Gainsboro;
             this.comboBox1.Font = new System.Drawing.Font("Constantia", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.ForeColor = System.Drawing.Color.Black;
             this.comboBox1.FormattingEnabled = true;
@@ -104,15 +101,15 @@
             this.comboBox1.Location = new System.Drawing.Point(184, 261);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(472, 36);
+            this.comboBox1.Size = new System.Drawing.Size(534, 36);
             this.comboBox1.TabIndex = 4;
-            this.comboBox1.Text = "Select template to copy";
+            this.comboBox1.Text = "Select Template to Copy";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.comboBox1.Click += new System.EventHandler(this.comboBox1_Click);
             // 
             // CreateNewButton
             // 
-            this.CreateNewButton.BackColor = System.Drawing.Color.CadetBlue;
+            this.CreateNewButton.BackColor = System.Drawing.Color.DarkSlateGray;
             this.CreateNewButton.Font = new System.Drawing.Font("Lucida Bright", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateNewButton.ForeColor = System.Drawing.Color.White;
             this.CreateNewButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -128,7 +125,7 @@
             // Copybut
             // 
             this.Copybut.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.Copybut.Font = new System.Drawing.Font("Lucida Bright", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Copybut.Font = new System.Drawing.Font("Cambria", 15.85714F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Copybut.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.Copybut.Location = new System.Drawing.Point(339, 797);
             this.Copybut.Margin = new System.Windows.Forms.Padding(4);
@@ -177,7 +174,7 @@
             // 
             this.MoClabel.AutoSize = true;
             this.MoClabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MoClabel.Location = new System.Drawing.Point(180, 319);
+            this.MoClabel.Location = new System.Drawing.Point(322, 319);
             this.MoClabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MoClabel.Name = "MoClabel";
             this.MoClabel.Size = new System.Drawing.Size(216, 24);
@@ -187,12 +184,14 @@
             // 
             // MoCbox
             // 
-            this.MoCbox.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MoCbox.Location = new System.Drawing.Point(412, 319);
+            this.MoCbox.Font = new System.Drawing.Font("Constantia", 8.142858F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MoCbox.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.MoCbox.Location = new System.Drawing.Point(554, 319);
             this.MoCbox.Margin = new System.Windows.Forms.Padding(4);
             this.MoCbox.Name = "MoCbox";
-            this.MoCbox.Size = new System.Drawing.Size(248, 29);
+            this.MoCbox.Size = new System.Drawing.Size(248, 31);
             this.MoCbox.TabIndex = 5;
+            this.MoCbox.Text = "Hangouts, SameTime, ETC";
             this.MoCbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MoCbox.Visible = false;
             // 
@@ -200,24 +199,26 @@
             // 
             this.Currentstatuslabel.AutoSize = true;
             this.Currentstatuslabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Currentstatuslabel.Location = new System.Drawing.Point(241, 371);
+            this.Currentstatuslabel.Location = new System.Drawing.Point(365, 371);
             this.Currentstatuslabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Currentstatuslabel.Name = "Currentstatuslabel";
-            this.Currentstatuslabel.Size = new System.Drawing.Size(155, 24);
+            this.Currentstatuslabel.Size = new System.Drawing.Size(173, 24);
             this.Currentstatuslabel.TabIndex = 13;
-            this.Currentstatuslabel.Text = "Issue Description:";
+            this.Currentstatuslabel.Text = "Analysis Performed:";
             this.Currentstatuslabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Currentstatuslabel.Visible = false;
             // 
             // currentstatbox
             // 
-            this.currentstatbox.Font = new System.Drawing.Font("Franklin Gothic Medium", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentstatbox.Location = new System.Drawing.Point(412, 371);
+            this.currentstatbox.Font = new System.Drawing.Font("Constantia", 8.142858F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentstatbox.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.currentstatbox.Location = new System.Drawing.Point(554, 371);
             this.currentstatbox.Margin = new System.Windows.Forms.Padding(4);
             this.currentstatbox.Multiline = true;
             this.currentstatbox.Name = "currentstatbox";
             this.currentstatbox.Size = new System.Drawing.Size(248, 30);
             this.currentstatbox.TabIndex = 6;
+            this.currentstatbox.Text = "Current status of issue";
             this.currentstatbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.currentstatbox.Visible = false;
             // 
@@ -238,7 +239,7 @@
             // Ynamecombo
             // 
             this.Ynamecombo.Font = new System.Drawing.Font("Constantia", 9.857143F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ynamecombo.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.Ynamecombo.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Ynamecombo.FormattingEnabled = true;
             this.Ynamecombo.Items.AddRange(new object[] {
             "Kyle",
@@ -293,18 +294,7 @@
             this.previewTextLabel.Name = "previewTextLabel";
             this.previewTextLabel.Size = new System.Drawing.Size(864, 352);
             this.previewTextLabel.TabIndex = 22;
-            this.previewTextLabel.Text = "Template copied";
-            // 
-            // refreshButton
-            // 
-            this.refreshButton.Image = ((System.Drawing.Image)(resources.GetObject("refreshButton.Image")));
-            this.refreshButton.Location = new System.Drawing.Point(663, 257);
-            this.refreshButton.Name = "refreshButton";
-            this.refreshButton.Size = new System.Drawing.Size(40, 40);
-            this.refreshButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.refreshButton.TabIndex = 23;
-            this.refreshButton.TabStop = false;
-            this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
+            this.previewTextLabel.Text = "Click Copy to view your template";
             // 
             // Primary
             // 
@@ -312,7 +302,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(884, 957);
-            this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.previewTextLabel);
             this.Controls.Add(this.Cnamebox);
             this.Controls.Add(this.label1);
@@ -337,7 +326,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aura L2 Template";
             this.Load += new System.EventHandler(this.Primary_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.refreshButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,7 +350,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label previewTextLabel;
-        private System.Windows.Forms.PictureBox refreshButton;
     }
 }
 
