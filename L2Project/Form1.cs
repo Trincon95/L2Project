@@ -24,7 +24,7 @@ namespace round2project
 
         public void Cnamebox_Enter(object sender, EventArgs e) // Creates Placeholder
         {
-            if (Cnamebox.Text == "Customer Name")
+            if (Cnamebox.Text == "Enter Customer Name")
             {
                 Cnamebox.Text = "";
             }
@@ -34,13 +34,13 @@ namespace round2project
         {
             if (Cnamebox.Text == "")
             {
-                Cnamebox.Text = "Customer Name";
+                Cnamebox.Text = "Enter Customer Name";
             }
         }
 
         public void Tnumbox_Enter(object sender, EventArgs e) // Creates Placeholder
         {
-            if (Tnumbox.Text == "Ticket #")
+            if (Tnumbox.Text == "Enter Ticket #")
             {
                 Tnumbox.Text = "";
             }
@@ -50,9 +50,40 @@ namespace round2project
         {
             if (Tnumbox.Text == "")
             {
-                Tnumbox.Text = "Ticket #";
+                Tnumbox.Text = "Enter Ticket #";
             }
         }
+        private void MoCbox_Enter(object sender, EventArgs e)
+        {
+            if (MoCbox.Text == "Hangouts, SameTime, ETC")
+            {
+                MoCbox.Text = "";
+            }
+        }
+
+        private void MoCbox_Leave(object sender, EventArgs e)
+        {
+            if (MoCbox.Text == "")
+            {
+                MoCbox.Text = "Hangouts, SameTime, ETC";
+            }
+        }
+        private void currentstatbox_Enter(object sender, EventArgs e)
+        {
+            if (currentstatbox.Text == "Current status of issue")
+            {
+                currentstatbox.Text = "";
+            }
+        }
+
+        private void currentstatbox_Leave(object sender, EventArgs e)
+        {
+            if (currentstatbox.Text == "")
+            {
+                currentstatbox.Text = "Current status of issue";
+            }
+        }
+
 
         public void comboBox1_SelectedIndexChanged(object sender, EventArgs e) //Suspension template text boxes visibility
         {
@@ -152,31 +183,47 @@ namespace round2project
 
             CopyLabel.Hide();
 
+            if (currentstatbox.Text == "Current status of issue")
+            {
+                currentstatbox.Text = "";         
+            }
 
-            if (Cnamebox.Text == "Customer Name")
+            if (currentstatbox.Text == "")
+            {
+                currentstatbox.Text = "Current status of issue";
+            }
+
+
+            if (Cnamebox.Text == "Enter Customer Name")
             {
                 Cnamebox.Text = "";
             }
 
             if (Cnamebox.Text == "")
             {
-                Cnamebox.Text = "Customer Name";
+                Cnamebox.Text = "Enter Customer Name";
             }
 
-
-
-            if (Tnumbox.Text == "Ticket #")
+            if (Tnumbox.Text == "Enter Ticket #")
             {
                 Tnumbox.Text = "";
             }
 
-
-
             if (Tnumbox.Text == "")
             {
-                Tnumbox.Text = "Ticket #";
+                Tnumbox.Text = "Enter Ticket #";
             }
-
+          
+            if (MoCbox.Text == "Hangouts, SameTime, ETC")
+                {
+                    MoCbox.Text = "";
+                }
+            
+            if (MoCbox.Text == "")
+                {
+                    MoCbox.Text = "Hangouts, SameTime, ETC";
+                }
+            
 
 
         }
@@ -228,7 +275,9 @@ namespace round2project
 
                     comboBox1.Items.Add(Path.GetFileNameWithoutExtension(name));
             }
-        }
+
+   
+    }
 
      
     }
