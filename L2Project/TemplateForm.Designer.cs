@@ -36,7 +36,7 @@
             // 
             // NewTempBox
             // 
-            this.NewTempBox.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewTempBox.Font = new System.Drawing.Font("Constantia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewTempBox.ForeColor = System.Drawing.Color.DarkGray;
             this.NewTempBox.Location = new System.Drawing.Point(13, 99);
             this.NewTempBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -65,12 +65,12 @@
             // 
             // NewTempTitlebox
             // 
-            this.NewTempTitlebox.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewTempTitlebox.ForeColor = System.Drawing.Color.DimGray;
+            this.NewTempTitlebox.Font = new System.Drawing.Font("Constantia", 9.857143F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewTempTitlebox.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.NewTempTitlebox.Location = new System.Drawing.Point(320, 36);
             this.NewTempTitlebox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NewTempTitlebox.Name = "NewTempTitlebox";
-            this.NewTempTitlebox.Size = new System.Drawing.Size(389, 33);
+            this.NewTempTitlebox.Size = new System.Drawing.Size(389, 36);
             this.NewTempTitlebox.TabIndex = 0;
             this.NewTempTitlebox.Text = "Enter template title";
             this.NewTempTitlebox.TextChanged += new System.EventHandler(this.NewTempTitlebox_TextChanged);
