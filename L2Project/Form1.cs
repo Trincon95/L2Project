@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -54,8 +55,7 @@ namespace round2project
 
         public void comboBox1_SelectedIndexChanged(object sender, EventArgs e) //Suspension template text boxes visibility
         {
-           
-
+                    
             if (comboBox1.Text == "Suspension")
             {
                 MoClabel.Show();
@@ -75,7 +75,7 @@ namespace round2project
        
         public void Copybut_Click(object sender, EventArgs e)
         {
-            
+           
 
             if (comboBox1.Text == "Hangouts message")
             {
@@ -131,6 +131,8 @@ namespace round2project
             CopyLabel.Show();
         }
 
+     
+     
         private void resetbutton_Click(object sender, EventArgs e)
         {
             foreach (Control c in Controls)
@@ -169,9 +171,7 @@ namespace round2project
                     Tnumbox.Text = "Ticket #";
                 }
             
-
-
-
+                
 
         }
         
@@ -197,7 +197,30 @@ namespace round2project
 
         private void comboBox1_Click(object sender, EventArgs e)
         {
-            CopyLabel.Hide();
+            ReadFiles();
+
+            
+            
+        }
+
+
+        private static void ReadFiles()//string targetDirectory)
+        {
+            string[] fileArray = Directory.GetFiles(@"c:\Templates");
+
+            //List<string> fileList = fileArray.ToList();
+
+            foreach (string name in fileArray)
+            {
+                string templateName = Path.GetFileNameWithoutExtension(name);
+                
+            }
+           // MessageBox.Show("Got files");
+
+
+
+
+
         }
     }
 }

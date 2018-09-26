@@ -55,7 +55,7 @@ namespace L2Project
 
             string templatetitle = NewTempTitlebox.Text; 
 
-            string fileName = @"c:\Templates\" + templatetitle + ".text"; // stores file text name into fileName variable. It will take the folder name, add title of template and text extension
+            string fileName = @"c:\Templates\" + templatetitle + ".txt"; // stores file text name into fileName variable. It will take the folder name, add title of template and text extension
        
             if (File.Exists(fileName)) //checks if FileName already exists
             {
@@ -69,6 +69,7 @@ namespace L2Project
                 writer.Close(); 
 
                 MessageBox.Show("Your new template has been created!");
+
                 this.Close();
             }
             
