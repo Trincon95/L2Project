@@ -24,9 +24,11 @@ namespace round2project
 
         public void Cnamebox_Enter(object sender, EventArgs e) // Creates Placeholder
         {
-            if (Cnamebox.Text == "Enter Customer Name")
+            if (Cnamebox.Text == "Enter Customers Name")
             {
                 Cnamebox.Text = "";
+                Cnamebox.ForeColor = Color.Black;
+
             }
         }
 
@@ -34,7 +36,8 @@ namespace round2project
         {
             if (Cnamebox.Text == "")
             {
-                Cnamebox.Text = "Enter Customer Name";
+                Cnamebox.Text = "Enter Customers Name";
+                
             }
         }
 
@@ -43,6 +46,7 @@ namespace round2project
             if (Tnumbox.Text == "Enter Ticket #")
             {
                 Tnumbox.Text = "";
+                Tnumbox.ForeColor = Color.Black;
             }
         }
 
@@ -58,6 +62,7 @@ namespace round2project
             if (MoCbox.Text == "Hangouts, SameTime, ETC")
             {
                 MoCbox.Text = "";
+                MoCbox.ForeColor = Color.Black;
             }
         }
 
@@ -73,6 +78,7 @@ namespace round2project
             if (currentstatbox.Text == "Current status of issue")
             {
                 currentstatbox.Text = "";
+                currentstatbox.ForeColor = Color.Black;
             }
         }
 
@@ -194,14 +200,14 @@ namespace round2project
             }
 
 
-            if (Cnamebox.Text == "Enter Customer Name")
+            if (Cnamebox.Text == "Enter Customers Name")
             {
                 Cnamebox.Text = "";
             }
 
             if (Cnamebox.Text == "")
             {
-                Cnamebox.Text = "Enter Customer Name";
+                Cnamebox.Text = "Enter Customers Name";
             }
 
             if (Tnumbox.Text == "Enter Ticket #")

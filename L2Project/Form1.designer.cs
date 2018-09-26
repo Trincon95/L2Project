@@ -51,7 +51,7 @@
             // Cnamebox
             // 
             this.Cnamebox.Font = new System.Drawing.Font("Constantia", 9.857143F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cnamebox.ForeColor = System.Drawing.Color.SlateGray;
+            this.Cnamebox.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.Cnamebox.Location = new System.Drawing.Point(392, 113);
             this.Cnamebox.Margin = new System.Windows.Forms.Padding(4);
             this.Cnamebox.Name = "Cnamebox";
@@ -66,7 +66,7 @@
             // Tnumbox
             // 
             this.Tnumbox.Font = new System.Drawing.Font("Constantia", 9.857143F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tnumbox.ForeColor = System.Drawing.Color.SlateGray;
+            this.Tnumbox.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.Tnumbox.Location = new System.Drawing.Point(394, 185);
             this.Tnumbox.Margin = new System.Windows.Forms.Padding(4);
             this.Tnumbox.Name = "Tnumbox";

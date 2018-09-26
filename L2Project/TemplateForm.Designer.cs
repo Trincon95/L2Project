@@ -66,7 +66,7 @@
             // NewTempTitlebox
             // 
             this.NewTempTitlebox.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewTempTitlebox.ForeColor = System.Drawing.Color.DarkGray;
+            this.NewTempTitlebox.ForeColor = System.Drawing.Color.DimGray;
             this.NewTempTitlebox.Location = new System.Drawing.Point(320, 36);
             this.NewTempTitlebox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NewTempTitlebox.Name = "NewTempTitlebox";
