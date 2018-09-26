@@ -102,7 +102,7 @@
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(469, 36);
-            this.comboBox1.TabIndex = 4;
+            this.comboBox1.TabIndex = 3;
             this.comboBox1.Text = "Select Template to Copy";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.comboBox1.Click += new System.EventHandler(this.comboBox1_Click);
@@ -113,11 +113,11 @@
             this.CreateNewButton.Font = new System.Drawing.Font("Lucida Bright", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateNewButton.ForeColor = System.Drawing.Color.White;
             this.CreateNewButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.CreateNewButton.Location = new System.Drawing.Point(646, 302);
+            this.CreateNewButton.Location = new System.Drawing.Point(648, 293);
             this.CreateNewButton.Margin = new System.Windows.Forms.Padding(4);
             this.CreateNewButton.Name = "CreateNewButton";
-            this.CreateNewButton.Size = new System.Drawing.Size(173, 36);
-            this.CreateNewButton.TabIndex = 9;
+            this.CreateNewButton.Size = new System.Drawing.Size(173, 54);
+            this.CreateNewButton.TabIndex = 4;
             this.CreateNewButton.Text = "Create New";
             this.CreateNewButton.UseVisualStyleBackColor = false;
             this.CreateNewButton.Click += new System.EventHandler(this.CreateNewButton_Click);
@@ -131,7 +131,7 @@
             this.Copybut.Margin = new System.Windows.Forms.Padding(4);
             this.Copybut.Name = "Copybut";
             this.Copybut.Size = new System.Drawing.Size(223, 92);
-            this.Copybut.TabIndex = 7;
+            this.Copybut.TabIndex = 8;
             this.Copybut.Text = "Copy";
             this.Copybut.UseVisualStyleBackColor = false;
             this.Copybut.Click += new System.EventHandler(this.Copybut_Click);
@@ -174,7 +174,7 @@
             // 
             this.MoClabel.AutoSize = true;
             this.MoClabel.Font = new System.Drawing.Font("Adobe Devanagari", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MoClabel.Location = new System.Drawing.Point(188, 363);
+            this.MoClabel.Location = new System.Drawing.Point(175, 363);
             this.MoClabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MoClabel.Name = "MoClabel";
             this.MoClabel.Size = new System.Drawing.Size(246, 33);
@@ -186,7 +186,7 @@
             // 
             this.MoCbox.Font = new System.Drawing.Font("Constantia", 8.142858F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MoCbox.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.MoCbox.Location = new System.Drawing.Point(438, 364);
+            this.MoCbox.Location = new System.Drawing.Point(439, 364);
             this.MoCbox.Margin = new System.Windows.Forms.Padding(4);
             this.MoCbox.Name = "MoCbox";
             this.MoCbox.Size = new System.Drawing.Size(248, 31);
@@ -199,7 +199,7 @@
             // 
             this.Currentstatuslabel.AutoSize = true;
             this.Currentstatuslabel.Font = new System.Drawing.Font("Adobe Devanagari", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Currentstatuslabel.Location = new System.Drawing.Point(232, 416);
+            this.Currentstatuslabel.Location = new System.Drawing.Point(224, 416);
             this.Currentstatuslabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Currentstatuslabel.Name = "Currentstatuslabel";
             this.Currentstatuslabel.Size = new System.Drawing.Size(198, 33);
@@ -231,7 +231,7 @@
             this.resetbutton.Margin = new System.Windows.Forms.Padding(4);
             this.resetbutton.Name = "resetbutton";
             this.resetbutton.Size = new System.Drawing.Size(151, 45);
-            this.resetbutton.TabIndex = 8;
+            this.resetbutton.TabIndex = 9;
             this.resetbutton.Text = "Reset";
             this.resetbutton.UseVisualStyleBackColor = true;
             this.resetbutton.Click += new System.EventHandler(this.resetbutton_Click);
@@ -254,13 +254,13 @@
             this.Ynamecombo.Name = "Ynamecombo";
             this.Ynamecombo.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Ynamecombo.Size = new System.Drawing.Size(294, 36);
-            this.Ynamecombo.TabIndex = 3;
+            this.Ynamecombo.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Adobe Devanagari", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(217, 113);
+            this.label1.Location = new System.Drawing.Point(215, 113);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 33);
             this.label1.TabIndex = 19;
@@ -270,7 +270,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Adobe Devanagari", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(262, 188);
+            this.label2.Location = new System.Drawing.Point(260, 188);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 33);
             this.label2.TabIndex = 20;
@@ -280,7 +280,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Adobe Devanagari", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(260, 41);
+            this.label3.Location = new System.Drawing.Point(258, 41);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 33);
             this.label3.TabIndex = 21;
@@ -294,7 +294,7 @@
             this.previewTextLabel.Location = new System.Drawing.Point(16, 473);
             this.previewTextLabel.Name = "previewTextLabel";
             this.previewTextLabel.Size = new System.Drawing.Size(858, 331);
-            this.previewTextLabel.TabIndex = 22;
+            this.previewTextLabel.TabIndex = 7;
             this.previewTextLabel.Text = "Click Copy to view your template";
             // 
             // Primary
