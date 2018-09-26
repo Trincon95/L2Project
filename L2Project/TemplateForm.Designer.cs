@@ -43,7 +43,7 @@
             this.NewTempBox.Multiline = true;
             this.NewTempBox.Name = "NewTempBox";
             this.NewTempBox.Size = new System.Drawing.Size(977, 397);
-            this.NewTempBox.TabIndex = 0;
+            this.NewTempBox.TabIndex = 1;
             this.NewTempBox.Text = "Enter Template Text Here...";
             this.NewTempBox.TextChanged += new System.EventHandler(this.NewTempBox_TextChanged);
             this.NewTempBox.Enter += new System.EventHandler(this.NewTempBox_Enter);
@@ -71,7 +71,7 @@
             this.NewTempTitlebox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NewTempTitlebox.Name = "NewTempTitlebox";
             this.NewTempTitlebox.Size = new System.Drawing.Size(389, 33);
-            this.NewTempTitlebox.TabIndex = 3;
+            this.NewTempTitlebox.TabIndex = 0;
             this.NewTempTitlebox.Text = "Enter template title";
             this.NewTempTitlebox.TextChanged += new System.EventHandler(this.NewTempTitlebox_TextChanged);
             // 
