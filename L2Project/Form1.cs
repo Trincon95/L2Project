@@ -17,6 +17,7 @@ namespace round2project
         public Primary()
         {
             InitializeComponent();
+            
         }
 
  
@@ -82,8 +83,10 @@ namespace round2project
                 string hangouts = "Hey " + Cnamebox.Text + ",";
                 string hangouts1 = "My name is " + Ynamecombo.Text + ". I am with L2 Aura Support.  Please advise me when it is a good time to resolve your issue INC" + Tnumbox.Text + ". ";
                 string hangouts2 = hangouts + "\n" + "\n" + hangouts1;
-                
+
+                previewTextLabel.Text = hangouts2;                   
                 Clipboard.SetText(hangouts2);
+                
             }
               if (comboBox1.Text == "Suspension")
             {
@@ -98,27 +101,29 @@ namespace round2project
 
                 string suspension = username + "\n" + modeofcom + "\n" + status + "\n" + Nextaction + "\n" + group + "\n" + eta;
                 Clipboard.SetText(suspension);
-              
+                previewTextLabel.Text = suspension;
             }
               if (comboBox1.Text == "Primary Email")
             {
                 string subject = "Aura Issue INC#" + Tnumbox.Text + "\n" + "\n";
-                string pemail = "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n";
+                string pemail = "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n";
                 string pemail1 = "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n";
                 string pemail2 = "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n";
                 string pemail3 = "Thanks,";
                 string primarye = subject + pemail + pemail1 + pemail2 + "\n" + pemail3;
                 Clipboard.SetText(primarye);
+                previewTextLabel.Text = primarye;
             }
             if (comboBox1.Text == "Reminder Email")
             {
                 string subject = "*(Reminder) Aura Issue INC#" + Tnumbox.Text + "\n" + "\n";
                 string semail = "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n";
-                string semail1 = "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n";
+                string semail1 = "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n" + "\n";
                 string semail2 = "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n";
                 string semail3 = "Thanks,";
                 string secondarye = subject + semail + semail1 + semail2 + "\n" + semail3;
                 Clipboard.SetText(secondarye);
+                previewTextLabel.Text = secondarye;
             }
             if (comboBox1.Text == "IP address")
             {
@@ -126,6 +131,7 @@ namespace round2project
                     string ip1 = "This can be found by Search > My Computer info";
                 string ipadd = ip + ip1;
                 Clipboard.SetText(ipadd);
+                previewTextLabel.Text = ipadd;
             }
     
             CopyLabel.Show();
@@ -174,19 +180,31 @@ namespace round2project
                 
 
         }
-        
+
         private void Primary_Load(object sender, EventArgs e)
         {
+
+            string Templates = @"c:\Templates";
+
+            System.IO.Directory.CreateDirectory(Templates);
+
             string[] fileArray = Directory.GetFiles(@"c:\Templates");
+          
+                
+                //List<string> fileList = fileArray.ToList();
 
+                foreach (string name in fileArray)
 
-            //List<string> fileList = fileArray.ToList();
+                    //  string templateName = Path.GetFileNameWithoutExtension(name);
+                    comboBox1.Items.Add(Path.GetFileNameWithoutExtension(name));
 
-            foreach (string name in fileArray)
+            
+          
 
-                //  string templateName = Path.GetFileNameWithoutExtension(name);
-                comboBox1.Items.Add(Path.GetFileNameWithoutExtension(name));
         }
+           
+            
+        
    
 
         private void CreateNewButton_Click(object sender, EventArgs e)
@@ -194,7 +212,7 @@ namespace round2project
 
             L2Project.TemplateForm Tf = new TemplateForm();
             Tf.ShowDialog();
-
+            
 
         }
 
@@ -205,9 +223,8 @@ namespace round2project
 
         private void comboBox1_Click(object sender, EventArgs e)
         {
-         
 
-
+            
 
         }
 

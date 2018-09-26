@@ -14,7 +14,7 @@ namespace L2Project
 {
     public partial class TemplateForm : Form
     {
-       
+
 
         public TemplateForm()
         {
@@ -45,7 +45,7 @@ namespace L2Project
         private void NewTempTitlebox_TextChanged(object sender, EventArgs e)
         {
 
-            
+
 
 
         }
@@ -53,10 +53,10 @@ namespace L2Project
         {
             CreateNewFilePath(); //when you click on create button it will create the template folder
 
-            string templatetitle = NewTempTitlebox.Text; 
+            string templatetitle = NewTempTitlebox.Text;
 
             string fileName = @"c:\Templates\" + templatetitle + ".txt"; // stores file text name into fileName variable. It will take the folder name, add title of template and text extension
-       
+
             if (File.Exists(fileName)) //checks if FileName already exists
             {
                 MessageBox.Show("Template name already exists"); //if fileName exists, it will not create a new template 
@@ -66,15 +66,22 @@ namespace L2Project
             {
                 System.IO.StreamWriter writer = new System.IO.StreamWriter(fileName); // if it does not exist, it will create text file
                 writer.Write(NewTempBox.Text); //Writes your template into text file
-                writer.Close(); 
+                writer.Close();
 
                 MessageBox.Show("Your new template has been created!");
 
+
                 this.Close();
-            }
-            
-          
+
+                //round2project.Primary F = new round2project.Primary();
+                //F.Show();
+                //F.Refresh();
+               
+
         }
+
+
+    } 
 
 
         private void NewTempBox_TextChanged(object sender, EventArgs e)
@@ -86,12 +93,13 @@ namespace L2Project
       
         private static void CreateNewFilePath() // creates template folder if it does not already exist
         {
-            string Templates = @"c:\Templates";
-           
-            System.IO.Directory.CreateDirectory(Templates);
+            
             
         }
 
-       
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
