@@ -29,9 +29,10 @@ namespace L2Project
 
         private void NewTempBox_Enter(object sender, EventArgs e)
         {
-            if (NewTempBox.Text == "Design New Template Here")
+            if (NewTempBox.Text == "Enter Template Text Here...")
             {
                 NewTempBox.Text = "";
+                NewTempBox.ForeColor = Color.Black;
             }
         }
 
@@ -39,7 +40,7 @@ namespace L2Project
         {
             if (NewTempBox.Text == "")
             {
-                NewTempBox.Text = "Design New Template Here";
+                NewTempBox.Text = "Enter Template Text Here...";
             }
         }
         private void NewTempTitlebox_TextChanged(object sender, EventArgs e)
@@ -75,17 +76,10 @@ namespace L2Project
                     this.Hide();               
                     round2project.Primary F = new round2project.Primary();
                     F.ShowDialog();
-                
-                
-
-
-               
-
+                     
         }
 
-
     } 
-
 
         private void NewTempBox_TextChanged(object sender, EventArgs e)
         {
@@ -103,6 +97,23 @@ namespace L2Project
         private void closeButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void NewTempTitlebox_Enter(object sender, EventArgs e)
+        {
+            if (NewTempTitlebox.Text == "Enter template title")
+            {
+                NewTempTitlebox.Text = "";
+                NewTempTitlebox.ForeColor = Color.Black;
+            }
+        }
+
+        private void NewTempTitlebox_Leave(object sender, EventArgs e)
+        {
+            if (NewTempTitlebox.Text == "")
+            {
+                NewTempTitlebox.Text = "Enter template title";
+            }
         }
     }
 }

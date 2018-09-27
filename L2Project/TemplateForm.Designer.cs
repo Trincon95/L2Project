@@ -38,11 +38,11 @@
             // 
             this.NewTempBox.Font = new System.Drawing.Font("Constantia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewTempBox.ForeColor = System.Drawing.Color.DarkGray;
-            this.NewTempBox.Location = new System.Drawing.Point(13, 99);
-            this.NewTempBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NewTempBox.Location = new System.Drawing.Point(14, 103);
+            this.NewTempBox.Margin = new System.Windows.Forms.Padding(4);
             this.NewTempBox.Multiline = true;
             this.NewTempBox.Name = "NewTempBox";
-            this.NewTempBox.Size = new System.Drawing.Size(977, 397);
+            this.NewTempBox.Size = new System.Drawing.Size(1065, 413);
             this.NewTempBox.TabIndex = 1;
             this.NewTempBox.Text = "Enter Template Text Here...";
             this.NewTempBox.TextChanged += new System.EventHandler(this.NewTempBox_TextChanged);
@@ -54,10 +54,10 @@
             this.Createbutton.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Createbutton.Font = new System.Drawing.Font("Constantia", 9.857143F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Createbutton.ForeColor = System.Drawing.Color.MintCream;
-            this.Createbutton.Location = new System.Drawing.Point(362, 504);
-            this.Createbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Createbutton.Location = new System.Drawing.Point(395, 525);
+            this.Createbutton.Margin = new System.Windows.Forms.Padding(4);
             this.Createbutton.Name = "Createbutton";
-            this.Createbutton.Size = new System.Drawing.Size(250, 72);
+            this.Createbutton.Size = new System.Drawing.Size(273, 75);
             this.Createbutton.TabIndex = 2;
             this.Createbutton.Text = "Create";
             this.Createbutton.UseVisualStyleBackColor = false;
@@ -67,36 +67,38 @@
             // 
             this.NewTempTitlebox.Font = new System.Drawing.Font("Constantia", 9.857143F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewTempTitlebox.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.NewTempTitlebox.Location = new System.Drawing.Point(320, 36);
-            this.NewTempTitlebox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NewTempTitlebox.Location = new System.Drawing.Point(349, 37);
+            this.NewTempTitlebox.Margin = new System.Windows.Forms.Padding(4);
             this.NewTempTitlebox.Name = "NewTempTitlebox";
-            this.NewTempTitlebox.Size = new System.Drawing.Size(389, 36);
+            this.NewTempTitlebox.Size = new System.Drawing.Size(424, 40);
             this.NewTempTitlebox.TabIndex = 0;
             this.NewTempTitlebox.Text = "Enter template title";
             this.NewTempTitlebox.TextChanged += new System.EventHandler(this.NewTempTitlebox_TextChanged);
+            this.NewTempTitlebox.Enter += new System.EventHandler(this.NewTempTitlebox_Enter);
+            this.NewTempTitlebox.Leave += new System.EventHandler(this.NewTempTitlebox_Leave);
             // 
             // NewTemplatelabel
             // 
             this.NewTemplatelabel.AutoSize = true;
             this.NewTemplatelabel.Font = new System.Drawing.Font("Constantia", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewTemplatelabel.Location = new System.Drawing.Point(239, 38);
+            this.NewTemplatelabel.Location = new System.Drawing.Point(261, 40);
             this.NewTemplatelabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NewTemplatelabel.Name = "NewTemplatelabel";
-            this.NewTemplatelabel.Size = new System.Drawing.Size(73, 29);
+            this.NewTemplatelabel.Size = new System.Drawing.Size(84, 33);
             this.NewTemplatelabel.TabIndex = 4;
             this.NewTemplatelabel.Text = "Title:";
             // 
             // TemplateForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(1019, 605);
+            this.ClientSize = new System.Drawing.Size(1112, 630);
             this.Controls.Add(this.NewTemplatelabel);
             this.Controls.Add(this.NewTempTitlebox);
             this.Controls.Add(this.Createbutton);
             this.Controls.Add(this.NewTempBox);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TemplateForm";
             this.Text = "TemplateForm";
             this.Load += new System.EventHandler(this.TemplateForm_Load);

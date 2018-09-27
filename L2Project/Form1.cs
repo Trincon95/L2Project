@@ -57,7 +57,7 @@ namespace round2project
                 Tnumbox.Text = "Enter Ticket #";
             }
         }
-        private void MoCbox_Enter(object sender, EventArgs e)
+        private void MoCbox_Enter_1(object sender, EventArgs e)
         {
             if (MoCbox.Text == "Hangouts, SameTime, ETC")
             {
@@ -66,14 +66,14 @@ namespace round2project
             }
         }
 
-        private void MoCbox_Leave(object sender, EventArgs e)
+        private void MoCbox_Leave_1(object sender, EventArgs e)
         {
             if (MoCbox.Text == "")
             {
                 MoCbox.Text = "Hangouts, SameTime, ETC";
             }
         }
-        private void currentstatbox_Enter(object sender, EventArgs e)
+        private void currentstatbox_Enter_1(object sender, EventArgs e)
         {
             if (currentstatbox.Text == "Current status of issue")
             {
@@ -82,7 +82,7 @@ namespace round2project
             }
         }
 
-        private void currentstatbox_Leave(object sender, EventArgs e)
+        private void currentstatbox_Leave_1(object sender, EventArgs e)
         {
             if (currentstatbox.Text == "")
             {
@@ -100,6 +100,16 @@ namespace round2project
                 MoCbox.Show();
                 Currentstatuslabel.Show();
                 currentstatbox.Show();
+              if (currentstatbox.Text == "Current status of issue")
+                {
+                    currentstatbox.Text = "";
+                    currentstatbox.ForeColor = Color.Black;
+                }
+                if (currentstatbox.Text == "")
+                {
+                    currentstatbox.Text = "Current status of issue";
+                }
+
             }
             if (comboBox1.Text.Contains("Suspension") == false)
             {
@@ -260,14 +270,10 @@ namespace round2project
 
         private void Cnamebox_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void comboBox1_Click(object sender, EventArgs e)
         {
-
-
-
         }
 
         private void DropDown_Add()
@@ -282,7 +288,23 @@ namespace round2project
                     comboBox1.Items.Add(Path.GetFileNameWithoutExtension(name));
             }
 
-   
+        private void comboBox1_Enter(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "Select Template to Copy")
+            {
+                comboBox1.Text = "";
+            }
+        }
+
+        private void comboBox1_Leave(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "")
+            {
+                comboBox1.Text = "Select Template to Copy";
+            }
+        }
+
+  
     }
 
      
