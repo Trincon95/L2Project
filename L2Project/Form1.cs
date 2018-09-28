@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Win32;
+
 
 namespace round2project
 {
@@ -37,7 +39,7 @@ namespace round2project
             if (Cnamebox.Text == "")
             {
                 Cnamebox.Text = "Enter Customers Name";
-                
+
             }
         }
 
@@ -96,37 +98,19 @@ namespace round2project
             string message = "Hey " + Cnamebox.Text + "," + "\n" + "\n" + "My name is " + Ynamecombo.Text + ". I am with L2 Aura Support.  Please advise me when it is a good time to resolve your issue INC" + Tnumbox.Text + ". ";
             System.IO.File.WriteAllText(@"C:\Templates\Hangouts message.txt", message);
 
-            DateTime ETA = DateTime.Now;
-            string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed & Current Status: " + currentstatbox.Text + "\n" + "Next Action Item: Awaiting response from " + Cnamebox.Text + " with a good time to discuss the issue."
-                + "\n" + "Team to perform next action item: PWC IT APP ASP - L2 ASSURANCE" + "\n" + "ETA: " + ETA.AddDays(2).ToString();
-            System.IO.File.WriteAllText(@"C:\Templates\Suspension.txt", suspension);
+            Template_Files();
 
-        string primaryemail = "Aura Issue INC#" + Tnumbox.Text + "\n" + "\n" + "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n"
-            + "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n" + "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n"
-             + "\n" + "Thanks,";
-            System.IO.File.WriteAllText(@"C:\Templates\Primary Email.txt", primaryemail);
-
-            string reminderEmail = "*(Reminder) Aura Issue INC#" + Tnumbox.Text + "\n" + "\n" + "\n" +
-            "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n" +
-            "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n" + "\n" + "\n" +
-            "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n" + "\n"
-            + "Thanks,";
-            System.IO.File.WriteAllText(@"C:\Templates\Reminder Email.txt", reminderEmail);
-
-            string ipAddress = "May i have your IP address please?" + "\n" + "\n" + "\n" +
-            "This can be found by Search > My Computer info";
-            System.IO.File.WriteAllText(@"C:\Templates\IP address.txt", ipAddress);
 
             string comboBoxValue = comboBox1.SelectedItem.ToString();
 
             if (comboBox1.Text == "Suspension")
             {
-               
+
                 MoClabel.Show();
                 MoCbox.Show();
                 Currentstatuslabel.Show();
                 currentstatbox.Show();
-               
+
 
                 if (currentstatbox.Text == "Current status of issue")
                 {
@@ -147,7 +131,7 @@ namespace round2project
                 Currentstatuslabel.Hide();
             }
 
-           if (comboBox1.Text == comboBoxValue)
+            if (comboBox1.Text == comboBoxValue)
 
             {
                 string text = System.IO.File.ReadAllText(@"\Templates\" + comboBoxValue + ".txt");
@@ -155,76 +139,38 @@ namespace round2project
                 previewTextLabel.Text = text;
             }
 
-            CopyLabel.Show();
+            
 
         }
 
         public void Copybut_Click(object sender, EventArgs e)
         {
-            string comboBoxValue = comboBox1.SelectedItem.ToString();
-
-            DateTime ETA = DateTime.Now;
-            string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed & Current Status: " + currentstatbox.Text + "\n" + "Next Action Item: Awaiting response from " + Cnamebox.Text + " with a good time to discuss the issue."
-                + "\n" + "Team to perform next action item: PWC IT APP ASP - L2 ASSURANCE" + "\n" + "ETA: " + ETA.AddDays(2).ToString();
-            System.IO.File.WriteAllText(@"C:\Templates\Suspension.txt", suspension);
-
-            if (comboBox1.Text == "Suspension")
+            try
             {
-                previewTextLabel.Text = suspension;
-            }
+                string comboBoxValue = comboBox1.SelectedItem.ToString();
 
-            /*
-                string group = "Team to perform next action item: PWC IT APP ASP - L2 ASSURANCE";
                 DateTime ETA = DateTime.Now;
-                string eta = "ETA: " + ETA.AddDays(2).ToString();
+                string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed & Current Status: " + currentstatbox.Text + "\n" + "Next Action Item: Awaiting response from " + Cnamebox.Text + " with a good time to discuss the issue."
+                    + "\n" + "Team to perform next action item: PWC IT APP ASP - L2 ASSURANCE" + "\n" + "ETA: " + ETA.AddDays(2).ToString();
+                System.IO.File.WriteAllText(@"C:\Templates\Suspension.txt", suspension);
 
-                string suspension = username + "\n" + modeofcom + "\n" + status + "\n" + Nextaction + "\n" + group + "\n" + eta;
-                Clipboard.SetText(suspension);
-                previewTextLabel.Text = suspension; 
-            
-            if (comboBox1.Text == "Primary Email")
-            {
-                string subject = "Aura Issue INC#" + Tnumbox.Text + "\n" + "\n";
-                string pemail = "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n";
-                string pemail1 = "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n";
-                string pemail2 = "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n";
-                string pemail3 = "Thanks,";
-                string primarye = subject + pemail + pemail1 + pemail2 + "\n" + pemail3;
-                Clipboard.SetText(primarye);
-                previewTextLabel.Text = primarye;
-            }
-            if (comboBox1.Text == "Reminder Email")
-            {
-                string subject = "*(Reminder) Aura Issue INC#" + Tnumbox.Text + "\n" + "\n";
-                string semail = "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n";
-                string semail1 = "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n" + "\n";
-                string semail2 = "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n";
-                string semail3 = "Thanks,";
-                string secondarye = subject + semail + semail1 + semail2 + "\n" + semail3;
-                Clipboard.SetText(secondarye);
-                previewTextLabel.Text = secondarye;
-            }
-            if (comboBox1.Text == "IP address")
-            {
-                string ip = "May i have your IP address please?" + "\n" + "\n";
-                string ip1 = "This can be found by Search > My Computer info";
-                string ipadd = ip + ip1;
-                Clipboard.SetText(ipadd);
-                previewTextLabel.Text = ipadd;
-                */
-            /* if (comboBox1.Text == comboBoxValue)
+                if (comboBox1.Text == "Suspension")
+                {
+                    previewTextLabel.Text = suspension;
+                }
 
-             {
-                string text = System.IO.File.ReadAllText(@"\Templates\" + comboBoxValue + ".txt");
-                Clipboard.SetText(text);
-                previewTextLabel.Text = text; 
-            }*/
-            if (comboBox1.Text == comboBoxValue)
-            {
-                string text = System.IO.File.ReadAllText(@"\Templates\" + comboBoxValue + ".txt");
-                Clipboard.SetText(text);
+
+                if (comboBox1.Text == comboBoxValue)
+                {
+                    string text = System.IO.File.ReadAllText(@"\Templates\" + comboBoxValue + ".txt");
+                    Clipboard.SetText(text);
+                }
+                CopyLabel.Show();
             }
-            CopyLabel.Show();
+            catch (Exception)
+            {
+                MessageBox.Show("Please select a template to copy");
+            }
         }
 
 
@@ -239,9 +185,9 @@ namespace round2project
                     c.Text = "";
                 }
             }
-           
-           
-           previewTextLabel.Text = "Click Copy to view your Template";
+
+
+            previewTextLabel.Text = "Click Copy to view your Template";
 
             comboBox1.Text = "Select Template to Copy";
 
@@ -249,7 +195,7 @@ namespace round2project
 
             if (currentstatbox.Text == "Current status of issue")
             {
-                currentstatbox.Text = "";         
+                currentstatbox.Text = "";
             }
 
             if (currentstatbox.Text == "")
@@ -277,53 +223,63 @@ namespace round2project
             {
                 Tnumbox.Text = "Enter Ticket #";
             }
-          
+
             if (MoCbox.Text == "Hangouts, SameTime, ETC")
-                {
-                    MoCbox.Text = "";
-                }
-            
+            {
+                MoCbox.Text = "";
+            }
+
             if (MoCbox.Text == "")
-                {
-                    MoCbox.Text = "Hangouts, SameTime, ETC";
-                }
-            
+            {
+                MoCbox.Text = "Hangouts, SameTime, ETC";
+            }
+
 
 
         }
 
         private void Primary_Load(object sender, EventArgs e)
         {
+            /*   string name1 = System.Windows.Forms.SystemInformation.UserName.ToString();
+               Ynamecombo.Text = name1;
+               */
+
+            // string userName = @"C:\Users\Public\IBM\Notes\Data\workspace\.metadata\.plugins\com.ibm.collaboration.realtime.login";
+            //  Ynamecombo.Text = userName;
+            /* using (RegistryKey userName = Registry.LocalMachine.OpenSubKey(@"Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\SessionData\1\LoggedOnDisplayName"))
+             {
+                 Object o = userName.GetValue("LoggedOnDisplayName");
+                 Convert.ToString(userName);
+                 Ynamecombo.Text = userName;
+             }*/
+
+     string path = @"C:\Users\Public\IBM\Notes\Data\workspace\.metadata\.plugins\com.ibm.collaboration.realtime.login";
+
+            string[] nameFile = Directory.GetFiles(path);
+
+
+            foreach (string name in nameFile)
+            {
+
+                string NameFile = Path.GetFileNameWithoutExtension(name);
+
+                NameFile = NameFile.Substring(NameFile.IndexOf('=') + 1);
+
+                NameFile = NameFile.Substring(0, NameFile.IndexOf(" ") + 1);
+
+                   Ynamecombo.SelectedText = NameFile;           
+            }
+
+            
 
             string Templates = @"c:\Templates";
 
             System.IO.Directory.CreateDirectory(Templates);
 
-            string message = "Hey " + Cnamebox.Text + "," + "\n" + "\n" + "My name is " + Ynamecombo.Text + ". I am with L2 Aura Support.  Please advise me when it is a good time to resolve your issue INC" + Tnumbox.Text + ". ";
-            System.IO.File.WriteAllText(@"C:\Templates\Hangouts message.txt", message);
-
-            DateTime ETA = DateTime.Now;
-           string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed & Current Status: " + currentstatbox.Text + "\n" + "Next Action Item: Awaiting response from " + Cnamebox.Text + " with a good time to discuss the issue."
-                + "\n" + "Team to perform next action item: PWC IT APP ASP - L2 ASSURANCE" + "\n" + "ETA: " + ETA.AddDays(2).ToString();
-            System.IO.File.WriteAllText(@"C:\Templates\Suspension.txt", suspension);
-
-            string primaryemail = "Aura Issue INC#" + Tnumbox.Text + "\n" + "\n" + "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n"
-                + "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n" + "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n"
-                 + "\n" + "Thanks,";
-            System.IO.File.WriteAllText(@"C:\Templates\Primary Email.txt", primaryemail);
-
-            string reminderEmail = "*(Reminder) Aura Issue INC#" + Tnumbox.Text + "\n" + "\n" + "\n" +
-            "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n" +
-            "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n" + "\n" + "\n" +
-            "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n" + "\n"
-            + "Thanks,";
-            System.IO.File.WriteAllText(@"C:\Templates\Reminder Email.txt", reminderEmail);
-
-            string ipAddress = "May i have your IP address please?" + "\n" + "\n" + "\n" +
-            "This can be found by Search > My Computer info";
-            System.IO.File.WriteAllText(@"C:\Templates\IP address.txt", ipAddress);
-
+            Template_Files();
           DropDown_Add();
+
+            
             //List<string> fileList = fileArray.ToList();
             //  string templateName = Path.GetFileNameWithoutExtension(name);
           
@@ -346,6 +302,33 @@ namespace round2project
 
         private void comboBox1_Click(object sender, EventArgs e)
         {
+        }
+
+        private void Template_Files()
+        {
+            string message = "Hey " + Cnamebox.Text + "," + "\n" + "\n" + "My name is " + Ynamecombo.Text + ". I am with L2 Aura Support.  Please advise me when it is a good time to resolve your issue INC" + Tnumbox.Text + ". ";
+            System.IO.File.WriteAllText(@"C:\Templates\Hangouts message.txt", message);
+
+            DateTime ETA = DateTime.Now;
+            string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed & Current Status: " + currentstatbox.Text + "\n" + "Next Action Item: Awaiting response from " + Cnamebox.Text + " with a good time to discuss the issue."
+                 + "\n" + "Team to perform next action item: PWC IT APP ASP - L2 ASSURANCE" + "\n" + "ETA: " + ETA.AddDays(2).ToString();
+            System.IO.File.WriteAllText(@"C:\Templates\Suspension.txt", suspension);
+
+            string primaryemail = "Aura Issue INC#" + Tnumbox.Text + "\n" + "\n" + "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n"
+                + "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n" + "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n"
+                 + "\n" + "Thanks,";
+            System.IO.File.WriteAllText(@"C:\Templates\Primary Email.txt", primaryemail);
+
+            string reminderEmail = "*(Reminder) Aura Issue INC#" + Tnumbox.Text + "\n" + "\n" + "\n" +
+            "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n" +
+            "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n" + "\n" + "\n" +
+            "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n" + "\n"
+            + "Thanks,";
+            System.IO.File.WriteAllText(@"C:\Templates\Reminder Email.txt", reminderEmail);
+
+            string ipAddress = "May i have your IP address please?" + "\n" + "\n" + "\n" +
+            "This can be found by Search > My Computer info";
+            System.IO.File.WriteAllText(@"C:\Templates\IP address.txt", ipAddress);
         }
 
         private void DropDown_Add()

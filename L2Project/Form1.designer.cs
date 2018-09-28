@@ -52,11 +52,11 @@
             // 
             this.Cnamebox.Font = new System.Drawing.Font("Constantia", 9.857143F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cnamebox.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.Cnamebox.Location = new System.Drawing.Point(392, 113);
+            this.Cnamebox.Location = new System.Drawing.Point(345, 113);
             this.Cnamebox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Cnamebox.Name = "Cnamebox";
             this.Cnamebox.Size = new System.Drawing.Size(294, 36);
-            this.Cnamebox.TabIndex = 1;
+            this.Cnamebox.TabIndex = 0;
             this.Cnamebox.Text = "Enter Customers Name";
             this.Cnamebox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Cnamebox.TextChanged += new System.EventHandler(this.Cnamebox_TextChanged);
@@ -67,11 +67,11 @@
             // 
             this.Tnumbox.Font = new System.Drawing.Font("Constantia", 9.857143F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tnumbox.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.Tnumbox.Location = new System.Drawing.Point(394, 185);
+            this.Tnumbox.Location = new System.Drawing.Point(347, 185);
             this.Tnumbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Tnumbox.Name = "Tnumbox";
             this.Tnumbox.Size = new System.Drawing.Size(292, 36);
-            this.Tnumbox.TabIndex = 2;
+            this.Tnumbox.TabIndex = 1;
             this.Tnumbox.Text = "Enter Ticket #";
             this.Tnumbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Tnumbox.Enter += new System.EventHandler(this.Tnumbox_Enter);
@@ -95,7 +95,7 @@
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(468, 36);
-            this.comboBox1.TabIndex = 3;
+            this.comboBox1.TabIndex = 2;
             this.comboBox1.Text = "Select Template to Copy";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.comboBox1.Click += new System.EventHandler(this.comboBox1_Click);
@@ -112,7 +112,7 @@
             this.CreateNewButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CreateNewButton.Name = "CreateNewButton";
             this.CreateNewButton.Size = new System.Drawing.Size(174, 54);
-            this.CreateNewButton.TabIndex = 4;
+            this.CreateNewButton.TabIndex = 8;
             this.CreateNewButton.Text = "Create New";
             this.CreateNewButton.UseVisualStyleBackColor = false;
             this.CreateNewButton.Click += new System.EventHandler(this.CreateNewButton_Click);
@@ -126,7 +126,7 @@
             this.Copybut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Copybut.Name = "Copybut";
             this.Copybut.Size = new System.Drawing.Size(222, 92);
-            this.Copybut.TabIndex = 8;
+            this.Copybut.TabIndex = 6;
             this.Copybut.Text = "Copy";
             this.Copybut.UseVisualStyleBackColor = false;
             this.Copybut.Click += new System.EventHandler(this.Copybut_Click);
@@ -185,7 +185,7 @@
             this.MoCbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MoCbox.Name = "MoCbox";
             this.MoCbox.Size = new System.Drawing.Size(248, 31);
-            this.MoCbox.TabIndex = 5;
+            this.MoCbox.TabIndex = 3;
             this.MoCbox.Text = "Hangouts, SameTime, ETC";
             this.MoCbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MoCbox.Visible = false;
@@ -214,7 +214,7 @@
             this.currentstatbox.Multiline = true;
             this.currentstatbox.Name = "currentstatbox";
             this.currentstatbox.Size = new System.Drawing.Size(248, 30);
-            this.currentstatbox.TabIndex = 6;
+            this.currentstatbox.TabIndex = 4;
             this.currentstatbox.Text = "Current status of issue";
             this.currentstatbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.currentstatbox.Visible = false;
@@ -230,7 +230,7 @@
             this.resetbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.resetbutton.Name = "resetbutton";
             this.resetbutton.Size = new System.Drawing.Size(152, 46);
-            this.resetbutton.TabIndex = 9;
+            this.resetbutton.TabIndex = 7;
             this.resetbutton.Text = "Reset";
             this.resetbutton.UseVisualStyleBackColor = true;
             this.resetbutton.Click += new System.EventHandler(this.resetbutton_Click);
@@ -250,18 +250,18 @@
             "Tania",
             "Ariel",
             "Shadi"});
-            this.Ynamecombo.Location = new System.Drawing.Point(392, 38);
+            this.Ynamecombo.Location = new System.Drawing.Point(345, 38);
             this.Ynamecombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Ynamecombo.Name = "Ynamecombo";
             this.Ynamecombo.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Ynamecombo.Size = new System.Drawing.Size(294, 36);
-            this.Ynamecombo.TabIndex = 0;
+            this.Ynamecombo.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Adobe Devanagari", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(215, 113);
+            this.label1.Location = new System.Drawing.Point(156, 113);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 33);
@@ -272,7 +272,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Adobe Devanagari", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(260, 188);
+            this.label2.Location = new System.Drawing.Point(205, 188);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 33);
@@ -283,7 +283,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Adobe Devanagari", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(258, 41);
+            this.label3.Location = new System.Drawing.Point(203, 41);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 33);
@@ -299,7 +299,7 @@
             this.previewTextLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.previewTextLabel.Name = "previewTextLabel";
             this.previewTextLabel.Size = new System.Drawing.Size(858, 331);
-            this.previewTextLabel.TabIndex = 7;
+            this.previewTextLabel.TabIndex = 5;
             this.previewTextLabel.Text = "Click Copy to view your template";
             // 
             // Primary
