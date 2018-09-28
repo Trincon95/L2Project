@@ -109,7 +109,8 @@ namespace round2project
                 Clipboard.SetText(text);
                 previewTextLabel.Text = text;
             }
-
+            CopyLabel.Hide();
+            
             
 
         }
@@ -121,7 +122,7 @@ namespace round2project
                 string comboBoxValue = comboBox1.SelectedItem.ToString();
 
                 DateTime ETA = DateTime.Now;
-                string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed & Current Status: "  + "\n" + "Next Action Item: Awaiting response from " + Cnamebox.Text + " with a good time to discuss the issue."
+                string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed & Current Status: " + "\n" + "Next Action Item: Awaiting response from " + Cnamebox.Text + " with a good time to discuss the issue."
                     + "\n" + "Team to perform next action item: PWC IT APP ASP - L2 ASSURANCE" + "\n" + "ETA: " + ETA.AddDays(2).ToString();
                 System.IO.File.WriteAllText(@"C:\Templates\Suspension.txt", suspension);
 
@@ -135,13 +136,15 @@ namespace round2project
                 {
                     string text = System.IO.File.ReadAllText(@"\Templates\" + comboBoxValue + ".txt");
                     Clipboard.SetText(text);
+
                 }
-                CopyLabel.Show();
+
             }
             catch (Exception)
             {
                 MessageBox.Show("Please select a template to copy");
             }
+            CopyLabel.Show();
         }
 
 
@@ -196,6 +199,7 @@ namespace round2project
                 MoCbox.Text = "Hangouts, SameTime, ETC";
             }
 
+           
 
 
         }
