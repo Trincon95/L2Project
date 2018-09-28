@@ -93,25 +93,31 @@ namespace round2project
 
         public void comboBox1_SelectedIndexChanged(object sender, EventArgs e) //Suspension template text boxes visibility
         {
-            string message = "Hey " + Cnamebox.Text + "," + "\n" + "\n" + "My name is " + Ynamecombo.Text + ". I am with L2 Aura Support.  Please advise me when it is a good time to resolve your issue INC" + Tnumbox.Text + ". ";
+            string message = "Hey " + Cnamebox.Text + "," + "\n" + "\n" + "My name is " + Ynamecombo.Text + ". I am with L2 Aura Support.  Please advise me when it is a good time to resolve your issue " + Tnumbox.Text + ". ";
             System.IO.File.WriteAllText(@"C:\Templates\Hangouts message.txt", message);
 
             DateTime ETA = DateTime.Now;
-            string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed & Current Status: " + currentstatbox.Text + "\n" + "Next Action Item: Awaiting response from " + Cnamebox.Text + " with a good time to discuss the issue."
+            string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed and Current Status: " + Cnamebox.Text + " is unavailable/unresponsive. Sent email requesting a webex to investigate issue." + "\n" + "Next Action Item: Investigate issue and formulate a resolution once " + Cnamebox.Text + " is available."
                 + "\n" + "Team to perform next action item: PWC IT APP ASP - L2 ASSURANCE" + "\n" + "ETA: " + ETA.AddDays(2).ToString();
             System.IO.File.WriteAllText(@"C:\Templates\Suspension.txt", suspension);
 
-        string primaryemail = "Aura Issue INC#" + Tnumbox.Text + "\n" + "\n" + "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n"
-            + "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n" + "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n"
+        string primaryemail = "Aura Issue #" + Tnumbox.Text + "\n" + "\n" + "Hello " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with Aura Level 2 Technical Support team. Your call to the Aura Help Desk regarding " + Tnumbox.Text + " was escalated to us." + "\n" + "We would further request to meet remotely or WebEx in order to investigate the issue. Please let me know the best method and time to reach you, and I will be glad to assist you." + "\n" + "\n"
+             + "\n" + "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n"
              + "\n" + "Thanks,";
             System.IO.File.WriteAllText(@"C:\Templates\Primary Email.txt", primaryemail);
 
-            string reminderEmail = "*(Reminder) Aura Issue INC#" + Tnumbox.Text + "\n" + "\n" + "\n" +
-            "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n" +
-            "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n" + "\n" + "\n" +
-            "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n" + "\n"
-            + "Thanks,";
+            string reminderEmail = "*(Reminder)* Aura Issue #" + Tnumbox.Text + "\n" + "\n" + "\n" +
+            "Hello " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with Aura Level 2 Technical Support team. Your call to the Aura Help Desk regarding " + Tnumbox.Text + " was escalated to us." + "\n" + "We would further request to meet remotely or WebEx in order to investigate the issue. Please let me know the best method and time to reach you, and I will be glad to assist you." + "\n" + "\n"
+             + "\n" + "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n"
+             + "\n" + "Thanks,";
             System.IO.File.WriteAllText(@"C:\Templates\Reminder Email.txt", reminderEmail);
+
+            string finalEmail = "*(Final Reminder)* Aura Issue #" + Tnumbox.Text + "\n" + "\n" + "\n" +
+                "I am with 2nd level support assigned to Incident " + Tnumbox.Text + " reported with Aura. With regard to this incident, we have made an attempt to approach you twice in the past few days." + "\n" + "Please be advised that if  we don't hear back at the end of business tomorrow we will consider the issue to be resolved and close the ticket with following status 'no action needed / no return contact by customer'." + "\n" +
+                "\n" + "Please let us know ASAP if you still require our assistance." + "\n" + "\n" + "Please contact PWC Help to log a new support request should you happen to experience this issue in the future." + "\n" + "\n" +
+                "Thank you,";
+            System.IO.File.WriteAllText(@"C:\Templates\Final Email.txt", finalEmail);
+
 
             string ipAddress = "May i have your IP address please?" + "\n" + "\n" + "\n" +
             "This can be found by Search > My Computer info";
@@ -303,21 +309,26 @@ namespace round2project
             System.IO.File.WriteAllText(@"C:\Templates\Hangouts message.txt", message);
 
             DateTime ETA = DateTime.Now;
-           string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed & Current Status: " + currentstatbox.Text + "\n" + "Next Action Item: Awaiting response from " + Cnamebox.Text + " with a good time to discuss the issue."
-                + "\n" + "Team to perform next action item: PWC IT APP ASP - L2 ASSURANCE" + "\n" + "ETA: " + ETA.AddDays(2).ToString();
+            string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed and Current Status: " + Cnamebox.Text + " is unavailable/unresponsive. Sent email requesting a webex to investigate issue." + "\n" + "Next Action Item: Investigate issue and formulate a resolution once " + Cnamebox.Text + " is available."
+                 + "\n" + "Team to perform next action item: PWC IT APP ASP - L2 ASSURANCE" + "\n" + "ETA: " + ETA.AddDays(2).ToString();
             System.IO.File.WriteAllText(@"C:\Templates\Suspension.txt", suspension);
 
-            string primaryemail = "Aura Issue INC#" + Tnumbox.Text + "\n" + "\n" + "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n"
-                + "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n" + "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n"
-                 + "\n" + "Thanks,";
+            string primaryemail = "Aura Issue #" + Tnumbox.Text + "\n" + "\n" + "Hello " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with Aura Level 2 Technical Support team. Your call to the Aura Help Desk regarding " + Tnumbox.Text + " was escalated to us." + "\n" + "We would further request to meet remotely or WebEx in order to investigate the issue. Please let me know the best method and time to reach you, and I will be glad to assist you." + "\n" + "\n"
+             + "\n" + "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n"
+             + "\n" + "Thanks,";
             System.IO.File.WriteAllText(@"C:\Templates\Primary Email.txt", primaryemail);
 
-            string reminderEmail = "*(Reminder) Aura Issue INC#" + Tnumbox.Text + "\n" + "\n" + "\n" +
-            "Hi " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with L2 Aura Support. With regard to the incident raised by you, we would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n" +
-            "Could you please Email or Sametime me your convenient time to work on the issue?" + "\n" + "\n" + "\n" +
-            "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n" + "\n"
-            + "Thanks,";
+            string reminderEmail = "*(Reminder)* Aura Issue #" + Tnumbox.Text + "\n" + "\n" + "\n" +
+           "Hello " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with Aura Level 2 Technical Support team. Your call to the Aura Help Desk regarding " + Tnumbox.Text + " was escalated to us." + "\n" + "We would further request to meet remotely or WebEx in order to investigate the issue. Please let me know the best method and time to reach you, and I will be glad to assist you." + "\n" + "\n"
+            + "\n" + "Kindly 'reply to all',  so any one from team 'TCS ASR App Support Aura' can assist you in my absence." + "\n"
+            + "\n" + "Thanks,";
             System.IO.File.WriteAllText(@"C:\Templates\Reminder Email.txt", reminderEmail);
+
+            string finalEmail = "*(Final Reminder)* Aura Issue #" + Tnumbox.Text + "\n" + "\n" + "\n" +
+                "I am with 2nd level support assigned to Incident " + Tnumbox.Text + " reported with Aura. With regard to this incident, we have made an attempt to approach you twice in the past few days." + "\n" + "Please be advised that if  we don't hear back at the end of business tomorrow we will consider the issue to be resolved and close the ticket with following status 'no action needed / no return contact by customer'." + "\n" +
+                "\n" + "Please let us know ASAP if you still require our assistance." + "\n" + "\n" + "Please contact PWC Help to log a new support request should you happen to experience this issue in the future." + "\n" + "\n" +
+                "Thank you,";
+            System.IO.File.WriteAllText(@"C:\Templates\Final Email.txt", finalEmail);
 
             string ipAddress = "May i have your IP address please?" + "\n" + "\n" + "\n" +
             "This can be found by Search > My Computer info";
