@@ -188,6 +188,7 @@ namespace round2project
 
         private void resetbutton_Click(object sender, EventArgs e)
         {
+
             foreach (Control c in Controls)
             {
                 if (c is TextBox)
@@ -195,6 +196,10 @@ namespace round2project
                     c.Text = "";
                 }
             }
+           
+           
+           previewTextLabel.Text = "Click Copy to view your Template";
+            
 
 
             CopyLabel.Hide();
