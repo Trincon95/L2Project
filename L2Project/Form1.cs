@@ -80,7 +80,7 @@ namespace round2project
 
         public void comboBox1_SelectedIndexChanged(object sender, EventArgs e) //Suspension template text boxes visibility
         {
-            string message = "Hey " + Cnamebox.Text + "," + "\n" + "\n" + "My name is " + Ynamecombo.Text + ". I am with L2 Aura Support.  Please advise me when it is a good time to resolve your issue INC" + Tnumbox.Text + ". ";
+            string message = "Hey " + Cnamebox.Text + "," + "\n" + "\n" + "My name is " + nameTextBox.Text + ". I am with L2 Aura Support.  Please advise me when it is a good time to resolve your issue INC" + Tnumbox.Text + ". ";
             System.IO.File.WriteAllText(@"C:\Templates\Hangouts message.txt", message);
 
             Template_Files();
@@ -163,7 +163,8 @@ namespace round2project
             comboBox1.Text = "Select Template to Copy";
 
             CopyLabel.Hide();
-
+            MoClabel.Hide();
+            MoCbox.Hide();
 
             if (Cnamebox.Text == "Enter Customers Name")
             {
@@ -228,7 +229,7 @@ namespace round2project
 
                 NameFile = NameFile.Substring(0, NameFile.IndexOf(" ") + 1);
 
-                   Ynamecombo.SelectedText = NameFile;           
+                   nameTextBox.SelectedText = NameFile;           
             }
 
             
@@ -267,7 +268,7 @@ namespace round2project
 
         private void Template_Files()
         {
-            string message = "Hey " + Cnamebox.Text + "," + "\n" + "\n" + "My name is " + Ynamecombo.Text + ". I am with L2 Aura Support.  Please advise me when it is a good time to resolve your issue INC" + Tnumbox.Text + ". ";
+            string message = "Hey " + Cnamebox.Text + "," + "\n" + "\n" + "My name is " + nameTextBox.Text + ". I am with L2 Aura Support.  Please advise me when it is a good time to resolve your issue INC" + Tnumbox.Text + ". ";
             System.IO.File.WriteAllText(@"C:\Templates\Hangouts message.txt", message);
 
             DateTime ETA = DateTime.Now;
@@ -322,7 +323,10 @@ namespace round2project
             }
         }
 
-       
+        private void nameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
      
