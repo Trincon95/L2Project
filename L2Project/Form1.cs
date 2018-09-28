@@ -191,5 +191,10 @@ namespace round2project
         {
 
         }
+
+        private void Ynamecombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+   
+        }
     }
 }
