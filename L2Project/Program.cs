@@ -18,6 +18,8 @@ namespace L2Project
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Primary());
+        
+            
         }
     }
 
