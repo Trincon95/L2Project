@@ -53,10 +53,11 @@ namespace L2Project
         private void Createbutton_Click(object sender, EventArgs e)
         {
             CreateNewFilePath(); //when you click on create button it will create the template folder
-
+           
             string templatetitle = NewTempTitlebox.Text;
 
             string fileName = @"c:\Templates\" + templatetitle + ".txt"; // stores file text name into fileName variable. It will take the folder name, add title of template and text extension
+
 
             if (File.Exists(fileName)) //checks if FileName already exists
             {
@@ -71,15 +72,14 @@ namespace L2Project
 
                 MessageBox.Show("Your new template has been created!");
 
+                this.Hide();
+                round2project.Primary F = new round2project.Primary();
+                F.ShowDialog();
 
-                
-                    this.Hide();               
-                    round2project.Primary F = new round2project.Primary();
-                    F.ShowDialog();
-                     
-        }
 
-    } 
+            }
+
+        } 
 
         private void NewTempBox_TextChanged(object sender, EventArgs e)
         {
