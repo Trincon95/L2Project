@@ -75,22 +75,7 @@ namespace round2project
                 MoCbox.Text = "Hangouts, SameTime, ETC";
             }
         }
-        private void currentstatbox_Enter_1(object sender, EventArgs e)
-        {
-            if (currentstatbox.Text == "Current status of issue")
-            {
-                currentstatbox.Text = "";
-                currentstatbox.ForeColor = Color.Black;
-            }
-        }
-
-        private void currentstatbox_Leave_1(object sender, EventArgs e)
-        {
-            if (currentstatbox.Text == "")
-            {
-                currentstatbox.Text = "Current status of issue";
-            }
-        }
+       
 
 
         public void comboBox1_SelectedIndexChanged(object sender, EventArgs e) //Suspension template text boxes visibility
@@ -108,27 +93,13 @@ namespace round2project
 
                 MoClabel.Show();
                 MoCbox.Show();
-                Currentstatuslabel.Show();
-                currentstatbox.Show();
-
-
-                if (currentstatbox.Text == "Current status of issue")
-                {
-                    currentstatbox.Text = "";
-                    currentstatbox.ForeColor = Color.Black;
-                }
-                if (currentstatbox.Text == "")
-                {
-                    currentstatbox.Text = "Current status of issue";
-                }
 
             }
             if (comboBox1.Text.Contains("Suspension") == false)
             {
                 MoCbox.Hide();
                 MoClabel.Hide();
-                currentstatbox.Hide();
-                Currentstatuslabel.Hide();
+
             }
 
             if (comboBox1.Text == comboBoxValue)
@@ -150,7 +121,7 @@ namespace round2project
                 string comboBoxValue = comboBox1.SelectedItem.ToString();
 
                 DateTime ETA = DateTime.Now;
-                string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed & Current Status: " + currentstatbox.Text + "\n" + "Next Action Item: Awaiting response from " + Cnamebox.Text + " with a good time to discuss the issue."
+                string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed & Current Status: "  + "\n" + "Next Action Item: Awaiting response from " + Cnamebox.Text + " with a good time to discuss the issue."
                     + "\n" + "Team to perform next action item: PWC IT APP ASP - L2 ASSURANCE" + "\n" + "ETA: " + ETA.AddDays(2).ToString();
                 System.IO.File.WriteAllText(@"C:\Templates\Suspension.txt", suspension);
 
@@ -192,16 +163,6 @@ namespace round2project
             comboBox1.Text = "Select Template to Copy";
 
             CopyLabel.Hide();
-
-            if (currentstatbox.Text == "Current status of issue")
-            {
-                currentstatbox.Text = "";
-            }
-
-            if (currentstatbox.Text == "")
-            {
-                currentstatbox.Text = "Current status of issue";
-            }
 
 
             if (Cnamebox.Text == "Enter Customers Name")
@@ -310,7 +271,7 @@ namespace round2project
             System.IO.File.WriteAllText(@"C:\Templates\Hangouts message.txt", message);
 
             DateTime ETA = DateTime.Now;
-            string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed & Current Status: " + currentstatbox.Text + "\n" + "Next Action Item: Awaiting response from " + Cnamebox.Text + " with a good time to discuss the issue."
+            string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed & Current Status: " + "\n" + "Next Action Item: Awaiting response from " + Cnamebox.Text + " with a good time to discuss the issue."
                  + "\n" + "Team to perform next action item: PWC IT APP ASP - L2 ASSURANCE" + "\n" + "ETA: " + ETA.AddDays(2).ToString();
             System.IO.File.WriteAllText(@"C:\Templates\Suspension.txt", suspension);
 
