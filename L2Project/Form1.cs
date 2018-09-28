@@ -123,7 +123,7 @@ namespace round2project
 
         public void Copybut_Click(object sender, EventArgs e)
         {
-
+            string comboBoxValue = comboBox1.SelectedItem.ToString();
 
             if (comboBox1.Text == "Hangouts message")
             {
@@ -179,6 +179,13 @@ namespace round2project
                 string ipadd = ip + ip1;
                 Clipboard.SetText(ipadd);
                 previewTextLabel.Text = ipadd;
+
+            }else if (comboBox1.Text == comboBoxValue)
+
+             {
+                string text = System.IO.File.ReadAllText(@"\Templates\" + comboBoxValue + ".txt");
+                Clipboard.SetText(text);
+                previewTextLabel.Text = text; 
             }
 
             CopyLabel.Show();
@@ -304,8 +311,8 @@ namespace round2project
             }
         }
 
-  
+       
     }
 
      
-    }
+ }
