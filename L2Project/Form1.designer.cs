@@ -38,8 +38,6 @@
             this.Resultlabel = new System.Windows.Forms.Label();
             this.MoClabel = new System.Windows.Forms.Label();
             this.MoCbox = new System.Windows.Forms.TextBox();
-            this.Currentstatuslabel = new System.Windows.Forms.Label();
-            this.currentstatbox = new System.Windows.Forms.TextBox();
             this.resetbutton = new System.Windows.Forms.Button();
             this.Ynamecombo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -193,35 +191,6 @@
             this.MoCbox.Enter += new System.EventHandler(this.MoCbox_Enter_1);
             this.MoCbox.Leave += new System.EventHandler(this.MoCbox_Leave_1);
             // 
-            // Currentstatuslabel
-            // 
-            this.Currentstatuslabel.AutoSize = true;
-            this.Currentstatuslabel.Font = new System.Drawing.Font("Adobe Devanagari", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Currentstatuslabel.Location = new System.Drawing.Point(244, 432);
-            this.Currentstatuslabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Currentstatuslabel.Name = "Currentstatuslabel";
-            this.Currentstatuslabel.Size = new System.Drawing.Size(226, 37);
-            this.Currentstatuslabel.TabIndex = 13;
-            this.Currentstatuslabel.Text = "Analysis Performed:";
-            this.Currentstatuslabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Currentstatuslabel.Visible = false;
-            // 
-            // currentstatbox
-            // 
-            this.currentstatbox.Font = new System.Drawing.Font("Constantia", 8.142858F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentstatbox.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.currentstatbox.Location = new System.Drawing.Point(478, 432);
-            this.currentstatbox.Margin = new System.Windows.Forms.Padding(4);
-            this.currentstatbox.Multiline = true;
-            this.currentstatbox.Name = "currentstatbox";
-            this.currentstatbox.Size = new System.Drawing.Size(270, 31);
-            this.currentstatbox.TabIndex = 6;
-            this.currentstatbox.Text = "Current status of issue";
-            this.currentstatbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.currentstatbox.Visible = false;
-            this.currentstatbox.Enter += new System.EventHandler(this.currentstatbox_Enter_1);
-            this.currentstatbox.Leave += new System.EventHandler(this.currentstatbox_Leave_1);
-            // 
             // resetbutton
             // 
             this.resetbutton.AutoSize = true;
@@ -314,7 +283,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Ynamecombo);
             this.Controls.Add(this.resetbutton);
-            this.Controls.Add(this.currentstatbox);
             this.Controls.Add(this.MoCbox);
             this.Controls.Add(this.Resultlabel);
             this.Controls.Add(this.Choosetemplate);
@@ -326,7 +294,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.MoClabel);
-            this.Controls.Add(this.Currentstatuslabel);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Primary";
@@ -349,8 +316,6 @@
         private System.Windows.Forms.Label Resultlabel;
         private System.Windows.Forms.Label MoClabel;
         private System.Windows.Forms.TextBox MoCbox;
-        private System.Windows.Forms.Label Currentstatuslabel;
-        private System.Windows.Forms.TextBox currentstatbox;
         private System.Windows.Forms.Button resetbutton;
         private System.Windows.Forms.ComboBox Ynamecombo;
         private System.Windows.Forms.Label label1;
