@@ -180,13 +180,14 @@ namespace round2project
                 Clipboard.SetText(ipadd);
                 previewTextLabel.Text = ipadd;
 
-            }else if (comboBox1.Text == comboBoxValue)
-
-             {
-                string text = System.IO.File.ReadAllText(@"\Templates\" + comboBoxValue + ".txt");
-                Clipboard.SetText(text);
-                previewTextLabel.Text = text; 
             }
+            //else if (comboBox1.Text == comboBoxValue)
+
+           //  {
+            //    string text = System.IO.File.ReadAllText(@"\Templates\" + comboBoxValue + ".txt");
+           //     Clipboard.SetText(text);
+          //      previewTextLabel.Text = text; 
+          //  }
 
             CopyLabel.Show();
         }
@@ -206,8 +207,8 @@ namespace round2project
            
            
            previewTextLabel.Text = "Click Copy to view your Template";
-            
 
+            comboBox1.Text = "Select Template to Copy";
 
             CopyLabel.Hide();
 
