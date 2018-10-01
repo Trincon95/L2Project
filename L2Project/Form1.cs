@@ -111,7 +111,7 @@ namespace round2project
                 string comboBoxValue = comboBox1.SelectedItem.ToString();
 
                 DateTime ETA = DateTime.Now;
-                string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed and Current Status: " + Cnamebox.Text + " unavailable/unresponsive via " + MoCbox.Text+ ". Sent email requesting a webex to investigate issue." + "\n" + "Next Action Item: Investigate issue and formulate a resolution once " + Cnamebox.Text + " is available."
+                string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed and Current Status: " + Cnamebox.Text + " is unavailable/unresponsive via " + MoCbox.Text+ ". Sent email requesting a webex to investigate issue." + "\n" + "Next Action Item: Investigate issue and formulate a resolution once " + Cnamebox.Text + " is available."
                 + "\n" + "Team to perform next action item: PWC IT APP ASP - L2 ASSURANCE" + "\n" + "ETA: " + ETA.AddDays(2).ToString();
                 System.IO.File.WriteAllText(@"C:\L2AutomationTemplates\Suspension.txt", suspension);
 
