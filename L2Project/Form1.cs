@@ -260,7 +260,7 @@ namespace round2project
             string finalEmail = "*(Final Reminder)* Aura Issue #" + Tnumbox.Text + "\n" + "\n" + "\n" + "Hello " + Cnamebox.Text + "," + "\n" + "\n" +
             "I am with 2nd level support assigned to Incident " + Tnumbox.Text + " reported with Aura. With regard to this incident, we have made an attempt to approach you twice in the past few days." + "\n" + "\n" +
             "Please be advised that if we don't hear back at the end of business tomorrow we will consider the issue to be resolved and close the ticket with following status 'no action needed / no return contact by customer'." + "\n" + "\n" +
-            "Please let us know ASAP if you still require our assistance. " + "\n" + "\n" + "Please contact PWC Help to log a new support request should you happen to experience this  issue in the future." + "\n" + "\n" + "Thank you,";
+            "Please let us know ASAP if you still require our assistance. " + "\n" + "\n" + "Should you happen to experience this issue in the future, please contact PwC Help to log a new support request." + "\n" + "\n" + "Thank you,";
             System.IO.File.WriteAllText(@"C:\L2AutomationTemplates\Final Email.txt", finalEmail);
         }
         public void Refresh_form()
