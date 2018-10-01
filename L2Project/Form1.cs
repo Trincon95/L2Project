@@ -301,6 +301,29 @@ namespace round2project
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string comboBoxValue = comboBox1.SelectedItem.ToString();
+            string path = @"\Templates\" + comboBoxValue + ".txt";
+            
+           //Directory.GetFiles(path);
+
+            File.Delete(path);
+
+            MessageBox.Show("Your template has been deleted");
+
+            Refresh_form();
+
+            //DropDown_Add();
+
+            comboBox1.Text = "Select a template to copy";
+
+            previewTextLabel.Text = "Click copy to view your template";
+
+
+
+        }
     }
 
      
