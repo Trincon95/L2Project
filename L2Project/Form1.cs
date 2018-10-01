@@ -75,7 +75,7 @@ namespace round2project
         public void comboBox1_SelectedIndexChanged(object sender, EventArgs e) //Suspension template text boxes visibility
         {
             string message = "Hey " + Cnamebox.Text + "," + "\n" + "\n" + "My name is " + nameTextBox.Text + ". I am with L2 Aura Support.  Please advise me when it is a good time to resolve your issue " + Tnumbox.Text + ". ";
-            System.IO.File.WriteAllText(@"C:\Templates\Hangouts message.txt", message);
+            System.IO.File.WriteAllText(@"C:\L2AutomationTemplates\Hangouts message.txt", message);
 
             Template_Files();
 
@@ -95,7 +95,7 @@ namespace round2project
 
             if (comboBox1.Text == comboBoxValue)
             {
-                string text = System.IO.File.ReadAllText(@"\Templates\" + comboBoxValue + ".txt");
+                string text = System.IO.File.ReadAllText(@"\L2AutomationTemplates\" + comboBoxValue + ".txt");
                 Clipboard.SetText(text);
                 previewTextLabel.Text = text;
             }
@@ -111,9 +111,9 @@ namespace round2project
                 string comboBoxValue = comboBox1.SelectedItem.ToString();
 
                 DateTime ETA = DateTime.Now;
-                string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed and Current Status: " + Cnamebox.Text + " unavailable/unresponsive via . Sent email requesting a webex to investigate issue." + "\n" + "Next Action Item: Investigate issue and formulate a resolution once  is available."
+                string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed and Current Status: " + Cnamebox.Text + " unavailable/unresponsive via " + MoCbox.Text+ ". Sent email requesting a webex to investigate issue." + "\n" + "Next Action Item: Investigate issue and formulate a resolution once " + Cnamebox.Text + " is available."
                 + "\n" + "Team to perform next action item: PWC IT APP ASP - L2 ASSURANCE" + "\n" + "ETA: " + ETA.AddDays(2).ToString();
-                System.IO.File.WriteAllText(@"C:\Templates\Suspension.txt", suspension);
+                System.IO.File.WriteAllText(@"C:\L2AutomationTemplates\Suspension.txt", suspension);
 
                 if (comboBox1.Text == "Suspension")
                 {
@@ -122,7 +122,7 @@ namespace round2project
 
                 if (comboBox1.Text == comboBoxValue)
                 {
-                    string text = System.IO.File.ReadAllText(@"\Templates\" + comboBoxValue + ".txt");
+                    string text = System.IO.File.ReadAllText(@"\L2AutomationTemplates\" + comboBoxValue + ".txt");
                     Clipboard.SetText(text);
                     CopyLabel.Show();
                 }
@@ -209,7 +209,7 @@ namespace round2project
                 nameTextBox.SelectedText = NameFile;           
             }
 
-            string Templates = @"c:\Templates";
+            string Templates = @"c:\L2AutomationTemplates";
 
             System.IO.Directory.CreateDirectory(Templates);
 
@@ -237,31 +237,31 @@ namespace round2project
         private void Template_Files()
         {
             string message = "Hey " + Cnamebox.Text + "," + "\n" + "\n" + "My name is " + nameTextBox.Text + ". I am with L2 Aura Support.  Please advise me when it is a good time to resolve your issue " + Tnumbox.Text + ". ";
-            System.IO.File.WriteAllText(@"C:\Templates\Hangouts message.txt", message);
+            System.IO.File.WriteAllText(@"C:\L2AutomationTemplates\Hangouts message.txt", message);
 
             DateTime ETA = DateTime.Now;
-            string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed and Current Status: " + Cnamebox.Text + " unavailable/unresponsive via " + MoCbox.Text + ". Sent email requesting a webex to investigate issue." + "\n" + "Next Action Item: Investigate issue and formulate a resolution once  is available."
+            string suspension = "Username: " + Cnamebox.Text + "\n" + "Mode of Communication: " + MoCbox.Text + "\n" + "Analysis Performed and Current Status: " + Cnamebox.Text + " unavailable/unresponsive via " + MoCbox.Text + ". Sent email requesting a webex to investigate issue." + "\n" + "Next Action Item: Investigate issue and formulate a resolution once " + Cnamebox.Text + "  is available."
             + "\n" + "Team to perform next action item: PWC IT APP ASP - L2 ASSURANCE" + "\n" + "ETA: " + ETA.AddDays(2).ToString();
-            System.IO.File.WriteAllText(@"C:\Templates\Suspension.txt", suspension);
+            System.IO.File.WriteAllText(@"C:\L2AutomationTemplates\Suspension.txt", suspension);
 
             string primaryemail = "Aura Issue #" + Tnumbox.Text + "\n" + "\n" + "Hello " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with the Aura level 2 Technical Support team. Your call to the Aura Help Desk regarding " + Tnumbox.Text + " was escalated to us. We would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n" + "Please let me know what is the best time and method to reach you, and I will be happy to assist you."
             + "\n" + "\n" + "Please reply to all, so any one from team can assist you in my absence." + "\n" + "\n" + "Thanks,";
-            System.IO.File.WriteAllText(@"C:\Templates\Primary Email.txt", primaryemail);
+            System.IO.File.WriteAllText(@"C:\L2AutomationTemplates\Primary Email.txt", primaryemail);
 
             string reminderEmail = "*(Reminder)* Aura Issue #" + Tnumbox.Text + "\n" + "\n" + "\n" +
             "Hello " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with the Aura level 2 Technical Support team. Your call to the Aura Help Desk regarding " + Tnumbox.Text + " was escalated to us. We would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n" + "Please let me know what is the best time and method to reach you, and I will be happy to assist you."
             + "\n" + "\n" + "Please reply to all, so any one from team can assist you in my absence." + "\n" + "\n" + "Thanks,";
-            System.IO.File.WriteAllText(@"C:\Templates\Reminder Email.txt", reminderEmail);
+            System.IO.File.WriteAllText(@"C:\L2AutomationTemplates\Reminder Email.txt", reminderEmail);
 
             string ipAddress = "May I have your IP address please?" + "\n" + "\n" + "\n" +
             "This can be found by Search > My Computer info";
-            System.IO.File.WriteAllText(@"C:\Templates\IP address.txt", ipAddress);
+            System.IO.File.WriteAllText(@"C:\L2AutomationTemplates\IP address.txt", ipAddress);
 
             string finalEmail = "*(Final Reminder)* Aura Issue #" + Tnumbox.Text + "\n" + "\n" + "\n" + "Hello " + Cnamebox.Text + "," + "\n" + "\n" +
             "I am with 2nd level support assigned to Incident " + Tnumbox.Text + " reported with Aura. With regard to this incident, we have made an attempt to approach you twice in the past few days." + "\n" + "\n" +
             "Please be advised that if  we don't hear back at the end of business tomorrow we will consider the issue to be resolved and close the ticket with following status 'no action needed / no return contact by customer'." + "\n" + "\n" +
             "Please let us know ASAP if you still require our assistance. " + "\n" + "\n" + "Please contact PWC Help to log a new support request should you happen to experience this  issue in the future." + "\n" + "\n" + "Thank you,";
-            System.IO.File.WriteAllText(@"C:\Templates\Final Email.txt", finalEmail);
+            System.IO.File.WriteAllText(@"C:\L2AutomationTemplates\Final Email.txt", finalEmail);
         }
         public void Refresh_form()
         {
@@ -271,9 +271,9 @@ namespace round2project
         private void DropDown_Add()
         {
             comboBox1.Items.Clear();
-            string[] fileArray = Directory.GetFiles(@"c:\Templates");
+            string[] fileArray = Directory.GetFiles(@"c:\L2AutomationTemplates");
             
-            string templateName = Path.GetFileNameWithoutExtension(@"c:\Templates");
+            string templateName = Path.GetFileNameWithoutExtension(@"c:\L2AutomationTemplates");
 
             foreach (string name in fileArray)
 
@@ -304,22 +304,26 @@ namespace round2project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string comboBoxValue = comboBox1.SelectedItem.ToString();
-            string path = @"\Templates\" + comboBoxValue + ".txt";
-            
-           //Directory.GetFiles(path);
+            try
+            {
+                string comboBoxValue = comboBox1.SelectedItem.ToString();
+                string path = @"\L2AutomationTemplates\" + comboBoxValue + ".txt";
 
-            File.Delete(path);
+                File.Delete(path);
 
-            MessageBox.Show("Your template has been deleted");
+                MessageBox.Show("Your template has been deleted");
 
-            Refresh_form();
+                Refresh_form();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Please select template to delete");
+            }
+        
 
-            //DropDown_Add();
+            comboBox1.Text = "Select Template to Copy";
 
-            comboBox1.Text = "Select a template to copy";
-
-            previewTextLabel.Text = "Click copy to view your template";
+            previewTextLabel.Text = "Click Copy to view your Template";
 
 
 
