@@ -123,7 +123,7 @@
             this.Copybut.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Copybut.Font = new System.Drawing.Font("Lucida Bright", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Copybut.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.Copybut.Location = new System.Drawing.Point(210, 739);
+            this.Copybut.Location = new System.Drawing.Point(198, 834);
             this.Copybut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Copybut.Name = "Copybut";
             this.Copybut.Size = new System.Drawing.Size(181, 76);
@@ -137,7 +137,7 @@
             this.CopyLabel.AutoSize = true;
             this.CopyLabel.Font = new System.Drawing.Font("Cambria", 8.142858F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CopyLabel.ForeColor = System.Drawing.Color.DimGray;
-            this.CopyLabel.Location = new System.Drawing.Point(224, 828);
+            this.CopyLabel.Location = new System.Drawing.Point(200, 914);
             this.CopyLabel.Name = "CopyLabel";
             this.CopyLabel.Size = new System.Drawing.Size(288, 20);
             this.CopyLabel.TabIndex = 7;
@@ -195,7 +195,7 @@
             this.resetbutton.AutoSize = true;
             this.resetbutton.Font = new System.Drawing.Font("Lucida Bright", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resetbutton.ForeColor = System.Drawing.Color.Firebrick;
-            this.resetbutton.Location = new System.Drawing.Point(409, 763);
+            this.resetbutton.Location = new System.Drawing.Point(385, 856);
             this.resetbutton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.resetbutton.Name = "resetbutton";
             this.resetbutton.Size = new System.Drawing.Size(125, 40);
@@ -239,13 +239,14 @@
             // 
             // previewTextLabel
             // 
+            this.previewTextLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
             this.previewTextLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.previewTextLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.previewTextLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.previewTextLabel.Location = new System.Drawing.Point(14, 394);
             this.previewTextLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.previewTextLabel.Name = "previewTextLabel";
-            this.previewTextLabel.Size = new System.Drawing.Size(710, 341);
+            this.previewTextLabel.Size = new System.Drawing.Size(712, 436);
             this.previewTextLabel.TabIndex = 7;
             this.previewTextLabel.Text = "Click Copy to view your template";
             this.previewTextLabel.Click += new System.EventHandler(this.previewTextLabel_Click);
@@ -282,7 +283,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(736, 877);
+            this.ClientSize = new System.Drawing.Size(736, 944);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.previewTextLabel);
