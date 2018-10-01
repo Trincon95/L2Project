@@ -253,7 +253,7 @@ namespace round2project
             + "\n" + "\n" + "Please 'reply to all', so any one from team can assist you in my absence." + "\n" + "\n" + "Thanks,";
             System.IO.File.WriteAllText(@"C:\L2AutomationTemplates\Reminder Email.txt", reminderEmail);
 
-            string ipAddress = "Please provide me with your IP address" + "\n" + "\n" + "\n" +
+            string ipAddress = "Please provide me with your IP address" + "\n" + 
             "This can be found by Search > \"My Computer Info\"";
             System.IO.File.WriteAllText(@"C:\L2AutomationTemplates\IP address.txt", ipAddress);
 
