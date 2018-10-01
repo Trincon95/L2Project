@@ -105,6 +105,7 @@ namespace round2project
 
         public void Copybut_Click(object sender, EventArgs e)
         {
+
             try
             {
                 string comboBoxValue = comboBox1.SelectedItem.ToString();
@@ -123,25 +124,31 @@ namespace round2project
                 {
                     string text = System.IO.File.ReadAllText(@"\Templates\" + comboBoxValue + ".txt");
                     Clipboard.SetText(text);
+                    CopyLabel.Show();
                 }
 
             }
             catch (Exception)
             {
                 MessageBox.Show("Please select a template to copy");
+               
             }
-            CopyLabel.Show();
+           
         }
 
         private void resetbutton_Click(object sender, EventArgs e)
         {
-            foreach (Control c in Controls)
-            {
-                if (c is TextBox)
-                {
-                    c.Text = "";
-                }
-            }
+            /* foreach (Control c in Controls)
+             {
+                 if (c is TextBox)
+                 {
+                     c.Text = "";
+                 }
+             }*/
+
+            Cnamebox.Text = "";
+            Tnumbox.Text = "";
+            MoCbox.Text = "";
 
             previewTextLabel.Text = "Click Copy to view your Template";
 
@@ -229,7 +236,7 @@ namespace round2project
 
         private void Template_Files()
         {
-            string message = "Hey " + Cnamebox.Text + "," + "\n" + "\n" + "My name is " + nameTextBox.Text + ". I am with L2 Aura Support.  Please advise me when it is a good time to resolve your issue INC" + Tnumbox.Text + ". ";
+            string message = "Hey " + Cnamebox.Text + "," + "\n" + "\n" + "My name is " + nameTextBox.Text + ". I am with L2 Aura Support.  Please advise me when it is a good time to resolve your issue " + Tnumbox.Text + ". ";
             System.IO.File.WriteAllText(@"C:\Templates\Hangouts message.txt", message);
 
             DateTime ETA = DateTime.Now;
@@ -246,12 +253,12 @@ namespace round2project
             + "\n" + "\n" + "Please reply to all, so any one from team can assist you in my absence." + "\n" + "\n" + "Thanks,";
             System.IO.File.WriteAllText(@"C:\Templates\Reminder Email.txt", reminderEmail);
 
-            string ipAddress = "May i have your IP address please?" + "\n" + "\n" + "\n" +
+            string ipAddress = "May I have your IP address please?" + "\n" + "\n" + "\n" +
             "This can be found by Search > My Computer info";
             System.IO.File.WriteAllText(@"C:\Templates\IP address.txt", ipAddress);
 
             string finalEmail = "*(Final Reminder)* Aura Issue #" + Tnumbox.Text + "\n" + "\n" + "\n" + "Hello " + Cnamebox.Text + "," + "\n" + "\n" +
-            "I am with 2nd level support assigned to Incident" + Tnumbox.Text + " reported with Aura. With regard to this incident, we have made an attempt to approach you twice in the past few days." + "\n" + "\n" +
+            "I am with 2nd level support assigned to Incident " + Tnumbox.Text + " reported with Aura. With regard to this incident, we have made an attempt to approach you twice in the past few days." + "\n" + "\n" +
             "Please be advised that if  we don't hear back at the end of business tomorrow we will consider the issue to be resolved and close the ticket with following status 'no action needed / no return contact by customer'." + "\n" + "\n" +
             "Please let us know ASAP if you still require our assistance. " + "\n" + "\n" + "Please contact PWC Help to log a new support request should you happen to experience this  issue in the future." + "\n" + "\n" + "Thank you,";
             System.IO.File.WriteAllText(@"C:\Templates\Final Email.txt", finalEmail);
