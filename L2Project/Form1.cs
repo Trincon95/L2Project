@@ -214,9 +214,9 @@ namespace round2project
 
         private void CreateNewButton_Click(object sender, EventArgs e)
         {
-            L2Project.TemplateForm Tf = new TemplateForm();
+            L2Project.TemplateForm Tf = new TemplateForm(this);
             Tf.ShowDialog();
-            this.Close();
+            //this.Close();
         }
 
         private void Cnamebox_TextChanged(object sender, EventArgs e)
@@ -256,9 +256,14 @@ namespace round2project
             "Please let us know ASAP if you still require our assistance. " + "\n" + "\n" + "Please contact PWC Help to log a new support request should you happen to experience this  issue in the future." + "\n" + "\n" + "Thank you,";
             System.IO.File.WriteAllText(@"C:\Templates\Final Email.txt", finalEmail);
         }
+        public void Refresh_form()
+        {
+            this.DropDown_Add();
+        }
 
         private void DropDown_Add()
         {
+            comboBox1.Items.Clear();
             string[] fileArray = Directory.GetFiles(@"c:\Templates");
             
             string templateName = Path.GetFileNameWithoutExtension(@"c:\Templates");

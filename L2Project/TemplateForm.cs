@@ -1,4 +1,5 @@
-﻿using System;
+﻿using round2project;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,17 @@ namespace L2Project
     public partial class TemplateForm : Form
     {
 
-
+        private Primary form1;
         public TemplateForm()
         {
             InitializeComponent();
         }
+        public TemplateForm(Primary parentform)
+        {
+            form1 = parentform;
+            InitializeComponent();
+        }
+
 
         private void TemplateForm_Load(object sender, EventArgs e)
         {
@@ -72,10 +79,10 @@ namespace L2Project
                 MessageBox.Show("Your new template has been created!");
 
 
-                
+                form1.Refresh_form();
                     this.Hide();               
-                    round2project.Primary F = new round2project.Primary();
-                    F.ShowDialog();
+                  //  round2project.Primary F = new round2project.Primary();
+                  //  F.ShowDialog();
                      
         }
 
