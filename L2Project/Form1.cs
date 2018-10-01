@@ -237,13 +237,13 @@ namespace round2project
             + "\n" + "Team to perform next action item: PWC IT APP ASP - L2 ASSURANCE" + "\n" + "ETA: " + ETA.AddDays(2).ToString();
             System.IO.File.WriteAllText(@"C:\Templates\Suspension.txt", suspension);
 
-            string primaryemail = "Aura Issue #" + Tnumbox.Text + "\n" + "\n" + "Hello " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with the Aura level 2 Technical Support team. Your call to the Aura Help Desk regarding " + Tnumbox.Text + " was escalated to us. Please let me know what is the best time and method to reach you, and I will be happy to assist you."
+            string primaryemail = "Aura Issue #" + Tnumbox.Text + "\n" + "\n" + "Hello " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with the Aura level 2 Technical Support team. Your call to the Aura Help Desk regarding " + Tnumbox.Text + " was escalated to us. We would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n" + "Please let me know what is the best time and method to reach you, and I will be happy to assist you."
             + "\n" + "\n" + "Please reply to all, so any one from team can assist you in my absence." + "\n" + "\n" + "Thanks,";
             System.IO.File.WriteAllText(@"C:\Templates\Primary Email.txt", primaryemail);
 
             string reminderEmail = "*(Reminder)* Aura Issue #" + Tnumbox.Text + "\n" + "\n" + "\n" +
-            "Hello " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with the Aura level 2 Technical Support team. Your call to the Aura Help Desk regarding " + Tnumbox.Text + " was escalated to us. Please let me know what is the best time and method to reach you, and I will be happy to assist you."
-                 + "\n" + "\n" + "Please reply to all, so any one from team can assist you in my absence." + "\n" + "\n" + "Thanks,";
+            "Hello " + Cnamebox.Text + "," + "\n" + "\n" + "Hope you are doing well!" + "\n" + "\n" + "I am with the Aura level 2 Technical Support team. Your call to the Aura Help Desk regarding " + Tnumbox.Text + " was escalated to us. We would further request to meet remotely or WebEx in order to investigate the issue." + "\n" + "\n" + "Please let me know what is the best time and method to reach you, and I will be happy to assist you."
+            + "\n" + "\n" + "Please reply to all, so any one from team can assist you in my absence." + "\n" + "\n" + "Thanks,";
             System.IO.File.WriteAllText(@"C:\Templates\Reminder Email.txt", reminderEmail);
 
             string ipAddress = "May i have your IP address please?" + "\n" + "\n" + "\n" +
