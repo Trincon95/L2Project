@@ -51,12 +51,11 @@
             // 
             this.Cnamebox.Font = new System.Drawing.Font("Cambria", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cnamebox.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.Cnamebox.Location = new System.Drawing.Point(343, 113);
-            this.Cnamebox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cnamebox.Location = new System.Drawing.Point(249, 75);
             this.Cnamebox.Name = "Cnamebox";
-            this.Cnamebox.Size = new System.Drawing.Size(294, 34);
+            this.Cnamebox.Size = new System.Drawing.Size(215, 27);
             this.Cnamebox.TabIndex = 1;
-            this.Cnamebox.Text = "Enter Customers Name";
+            this.Cnamebox.Text = "Enter Customer\'s Name";
             this.Cnamebox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Cnamebox.TextChanged += new System.EventHandler(this.Cnamebox_TextChanged);
             this.Cnamebox.Enter += new System.EventHandler(this.Cnamebox_Enter);
@@ -66,10 +65,9 @@
             // 
             this.Tnumbox.Font = new System.Drawing.Font("Cambria", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tnumbox.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.Tnumbox.Location = new System.Drawing.Point(345, 185);
-            this.Tnumbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tnumbox.Location = new System.Drawing.Point(251, 123);
             this.Tnumbox.Name = "Tnumbox";
-            this.Tnumbox.Size = new System.Drawing.Size(292, 34);
+            this.Tnumbox.Size = new System.Drawing.Size(213, 27);
             this.Tnumbox.TabIndex = 2;
             this.Tnumbox.Text = "Enter Ticket #";
             this.Tnumbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -91,10 +89,9 @@
             this.comboBox1.Font = new System.Drawing.Font("Constantia", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.ForeColor = System.Drawing.Color.Black;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(169, 302);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Location = new System.Drawing.Point(123, 201);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(468, 36);
+            this.comboBox1.Size = new System.Drawing.Size(341, 27);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Text = "Select Template to Copy";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
@@ -109,10 +106,9 @@
             this.CreateNewButton.Font = new System.Drawing.Font("Lucida Bright", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateNewButton.ForeColor = System.Drawing.Color.White;
             this.CreateNewButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.CreateNewButton.Location = new System.Drawing.Point(657, 293);
-            this.CreateNewButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreateNewButton.Location = new System.Drawing.Point(478, 195);
             this.CreateNewButton.Name = "CreateNewButton";
-            this.CreateNewButton.Size = new System.Drawing.Size(174, 54);
+            this.CreateNewButton.Size = new System.Drawing.Size(127, 36);
             this.CreateNewButton.TabIndex = 4;
             this.CreateNewButton.Text = "Create New";
             this.CreateNewButton.UseVisualStyleBackColor = false;
@@ -121,12 +117,11 @@
             // Copybut
             // 
             this.Copybut.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.Copybut.Font = new System.Drawing.Font("Cambria", 15.85714F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Copybut.Font = new System.Drawing.Font("Lucida Bright", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Copybut.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.Copybut.Location = new System.Drawing.Point(268, 822);
-            this.Copybut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Copybut.Location = new System.Drawing.Point(195, 548);
             this.Copybut.Name = "Copybut";
-            this.Copybut.Size = new System.Drawing.Size(222, 92);
+            this.Copybut.Size = new System.Drawing.Size(161, 61);
             this.Copybut.TabIndex = 8;
             this.Copybut.Text = "Copy";
             this.Copybut.UseVisualStyleBackColor = false;
@@ -137,10 +132,9 @@
             this.CopyLabel.AutoSize = true;
             this.CopyLabel.Font = new System.Drawing.Font("Cambria", 8.142858F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CopyLabel.ForeColor = System.Drawing.Color.DimGray;
-            this.CopyLabel.Location = new System.Drawing.Point(284, 929);
-            this.CopyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.CopyLabel.Location = new System.Drawing.Point(207, 619);
             this.CopyLabel.Name = "CopyLabel";
-            this.CopyLabel.Size = new System.Drawing.Size(329, 23);
+            this.CopyLabel.Size = new System.Drawing.Size(227, 16);
             this.CopyLabel.TabIndex = 7;
             this.CopyLabel.Text = "Template has been copied to Clipboard";
             this.CopyLabel.Visible = false;
@@ -149,20 +143,18 @@
             // 
             this.Choosetemplate.AutoSize = true;
             this.Choosetemplate.Font = new System.Drawing.Font("Constantia", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Choosetemplate.Location = new System.Drawing.Point(310, 256);
-            this.Choosetemplate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Choosetemplate.Location = new System.Drawing.Point(225, 171);
             this.Choosetemplate.Name = "Choosetemplate";
-            this.Choosetemplate.Size = new System.Drawing.Size(242, 33);
+            this.Choosetemplate.Size = new System.Drawing.Size(169, 23);
             this.Choosetemplate.TabIndex = 9;
             this.Choosetemplate.Text = "Choose Template:";
             // 
             // Resultlabel
             // 
             this.Resultlabel.AutoSize = true;
-            this.Resultlabel.Location = new System.Drawing.Point(230, 313);
-            this.Resultlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Resultlabel.Location = new System.Drawing.Point(167, 209);
             this.Resultlabel.Name = "Resultlabel";
-            this.Resultlabel.Size = new System.Drawing.Size(0, 25);
+            this.Resultlabel.Size = new System.Drawing.Size(0, 17);
             this.Resultlabel.TabIndex = 10;
             this.Resultlabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -170,10 +162,9 @@
             // 
             this.MoClabel.AutoSize = true;
             this.MoClabel.Font = new System.Drawing.Font("Cambria", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MoClabel.Location = new System.Drawing.Point(50, 389);
-            this.MoClabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MoClabel.Location = new System.Drawing.Point(36, 259);
             this.MoClabel.Name = "MoClabel";
-            this.MoClabel.Size = new System.Drawing.Size(270, 28);
+            this.MoClabel.Size = new System.Drawing.Size(190, 20);
             this.MoClabel.TabIndex = 11;
             this.MoClabel.Text = "Mode of Communication:";
             this.MoClabel.Visible = false;
@@ -182,14 +173,14 @@
             // 
             this.MoCbox.Font = new System.Drawing.Font("Cambria", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MoCbox.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.MoCbox.Location = new System.Drawing.Point(346, 386);
-            this.MoCbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MoCbox.Location = new System.Drawing.Point(252, 257);
             this.MoCbox.Name = "MoCbox";
-            this.MoCbox.Size = new System.Drawing.Size(292, 34);
+            this.MoCbox.Size = new System.Drawing.Size(213, 27);
             this.MoCbox.TabIndex = 5;
             this.MoCbox.Text = "Hangouts, SameTime, ETC";
             this.MoCbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MoCbox.Visible = false;
+            this.MoCbox.TextChanged += new System.EventHandler(this.MoCbox_TextChanged);
             this.MoCbox.Enter += new System.EventHandler(this.MoCbox_Enter_1);
             this.MoCbox.Leave += new System.EventHandler(this.MoCbox_Leave_1);
             // 
@@ -198,10 +189,9 @@
             this.resetbutton.AutoSize = true;
             this.resetbutton.Font = new System.Drawing.Font("Lucida Bright", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resetbutton.ForeColor = System.Drawing.Color.Firebrick;
-            this.resetbutton.Location = new System.Drawing.Point(511, 850);
-            this.resetbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resetbutton.Location = new System.Drawing.Point(372, 567);
             this.resetbutton.Name = "resetbutton";
-            this.resetbutton.Size = new System.Drawing.Size(152, 46);
+            this.resetbutton.Size = new System.Drawing.Size(111, 32);
             this.resetbutton.TabIndex = 9;
             this.resetbutton.Text = "Reset";
             this.resetbutton.UseVisualStyleBackColor = true;
@@ -211,10 +201,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(132, 115);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(96, 77);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 28);
+            this.label1.Size = new System.Drawing.Size(129, 20);
             this.label1.TabIndex = 19;
             this.label1.Text = "Customer Name:";
             // 
@@ -222,10 +212,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(187, 190);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(136, 127);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 28);
+            this.label2.Size = new System.Drawing.Size(94, 20);
             this.label2.TabIndex = 20;
             this.label2.Text = "Incident ID:";
             // 
@@ -233,10 +223,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(187, 46);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(136, 31);
+            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 28);
+            this.label3.Size = new System.Drawing.Size(93, 20);
             this.label3.TabIndex = 21;
             this.label3.Text = "Your Name:";
             // 
@@ -245,20 +235,21 @@
             this.previewTextLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.previewTextLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.previewTextLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.previewTextLabel.Location = new System.Drawing.Point(16, 473);
-            this.previewTextLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.previewTextLabel.Location = new System.Drawing.Point(12, 315);
+            this.previewTextLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.previewTextLabel.Name = "previewTextLabel";
-            this.previewTextLabel.Size = new System.Drawing.Size(858, 331);
+            this.previewTextLabel.Size = new System.Drawing.Size(625, 221);
             this.previewTextLabel.TabIndex = 7;
             this.previewTextLabel.Text = "Click Copy to view your template";
+            this.previewTextLabel.Click += new System.EventHandler(this.previewTextLabel_Click);
             // 
             // nameTextBox
             // 
             this.nameTextBox.Font = new System.Drawing.Font("Cambria", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameTextBox.Location = new System.Drawing.Point(345, 46);
-            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.nameTextBox.Location = new System.Drawing.Point(251, 31);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(292, 34);
+            this.nameTextBox.Size = new System.Drawing.Size(213, 27);
             this.nameTextBox.TabIndex = 22;
             this.nameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
@@ -269,10 +260,9 @@
             this.button1.BackColor = System.Drawing.Color.Brown;
             this.button1.Font = new System.Drawing.Font("Lucida Bright", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(691, 354);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(503, 236);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 34);
+            this.button1.Size = new System.Drawing.Size(81, 26);
             this.button1.TabIndex = 23;
             this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = false;
@@ -280,10 +270,10 @@
             // 
             // Primary
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(886, 970);
+            this.ClientSize = new System.Drawing.Size(644, 647);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.previewTextLabel);
@@ -302,7 +292,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.MoClabel);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Primary";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aura L2 Template";
