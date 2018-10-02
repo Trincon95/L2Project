@@ -15,6 +15,12 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_3984AEC6770D4F8589FE5EDB1B29A2E1"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_5709DB2C6D3243328A4D861B56BDC344"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -106,6 +112,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3984AEC6770D4F8589FE5EDB1B29A2E1"
+            {
+            "SourcePath" = "8:..\\..\\..\\..\\Desktop\\lemon_S2W_icon.ico"
+            "TargetName" = "8:lemon_S2W_icon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_BEAEB54EDC87404694DFC83C9A9D6870"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5709DB2C6D3243328A4D861B56BDC344"
             {
             "SourcePath" = "8:..\\..\\..\\..\\Desktop\\lemon_S2W_icon.ico"
@@ -225,7 +251,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Support Template Generator"
         "ProductCode" = "8:{61EBEDCE-1B40-4BAD-BD02-338F4E806C8A}"
-        "PackageCode" = "8:{10AFC495-8B18-439C-9678-0FC6155875DE}"
+        "PackageCode" = "8:{FAA95580-3462-4A31-B6E6-25992D0C1BFF}"
         "UpgradeCode" = "8:{64ECC1AD-1E6C-44C7-A31F-DD3FE1B60F19}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -356,7 +382,7 @@
             "Target" = "8:_718FE19F9CD44550BA28842CD3A25FBC"
             "Folder" = "8:_BEAEB54EDC87404694DFC83C9A9D6870"
             "WorkingFolder" = "8:_59259478477249E7950719B0B4E4C71D"
-            "Icon" = "8:"
+            "Icon" = "8:_3984AEC6770D4F8589FE5EDB1B29A2E1"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_CD7DBC89AA9B405993D1F11A83390021"
