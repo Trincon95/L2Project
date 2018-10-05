@@ -69,7 +69,7 @@ namespace L2Project
 
             string templatetitle = NewTempTitlebox.Text;
 
-            string fileName = @"C:\Users\%GUID%\AppData\Local\SupportTemplates\".Replace("%GUID%", strComputerName)  + templatetitle + ".txt"; //stores file text name into fileName variable. It will take the folder name, add title of template and text extension
+            string fileName = @"C:\Users\%GUID%\AppData\Local\SupportTemplateGenerator\".Replace("%GUID%", strComputerName)  + templatetitle + ".txt"; //stores file text name into fileName variable. It will take the folder name, add title of template and text extension
 
             if (File.Exists(fileName)) //checks if FileName already exists
             {
