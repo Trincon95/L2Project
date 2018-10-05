@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L2Project", "L2Project\L2Project.csproj", "{FCA52941-CC19-431F-AB96-25E316C2FF4F}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Support Template Generator", "Support Template Generator\Support Template Generator.vdproj", "{250D28A9-E231-4BA6-A4B8-AC5088E35370}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{FCA52941-CC19-431F-AB96-25E316C2FF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCA52941-CC19-431F-AB96-25E316C2FF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCA52941-CC19-431F-AB96-25E316C2FF4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{250D28A9-E231-4BA6-A4B8-AC5088E35370}.Debug|Any CPU.ActiveCfg = Debug
+		{250D28A9-E231-4BA6-A4B8-AC5088E35370}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
