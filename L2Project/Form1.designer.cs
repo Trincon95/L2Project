@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Primary));
             this.Cnamebox = new System.Windows.Forms.TextBox();
             this.Tnumbox = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -307,6 +308,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.MoClabel);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Primary";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TemplateForm));
             this.NewTempBox = new System.Windows.Forms.TextBox();
             this.Createbutton = new System.Windows.Forms.Button();
             this.NewTempTitlebox = new System.Windows.Forms.TextBox();
@@ -98,6 +99,7 @@
             this.Controls.Add(this.NewTempTitlebox);
             this.Controls.Add(this.Createbutton);
             this.Controls.Add(this.NewTempBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TemplateForm";
             this.Text = "TemplateForm";
