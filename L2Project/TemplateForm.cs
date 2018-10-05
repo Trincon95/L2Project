@@ -59,11 +59,17 @@ namespace L2Project
         }
         private void Createbutton_Click(object sender, EventArgs e)
         {
+            string strComputerName = Environment.MachineName.ToString();
+
+            strComputerName = strComputerName.Substring(0, strComputerName.Length - 2);
+
+
+
             CreateNewFilePath(); //when you click on create button it will create the template folder
 
             string templatetitle = NewTempTitlebox.Text;
 
-            string fileName = @"c:\L2AutomationTemplates\" + templatetitle + ".txt"; // stores file text name into fileName variable. It will take the folder name, add title of template and text extension
+            string fileName = @"C:\Users\%GUID%\AppData\Local\SupportTemplates\".Replace("%GUID%", strComputerName)  + templatetitle + ".txt"; //stores file text name into fileName variable. It will take the folder name, add title of template and text extension
 
             if (File.Exists(fileName)) //checks if FileName already exists
             {
